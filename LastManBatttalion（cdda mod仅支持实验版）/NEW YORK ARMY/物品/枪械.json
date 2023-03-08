@@ -1,0 +1,31 @@
+[
+{
+    "id": "svd_rifle",
+    "//":"原型:莫拉莱斯的狙击步枪",
+    "copy-from": "rifle_manual",
+    "looks_like": "ar15",
+    "type": "GUN",
+    "name": { "str": "SVD热射线步枪" },
+    "description": "一把...像SVD的磁轨步枪?至少看起来它就是SVD。这把磁轨步枪来自拉丁美洲某国，他们用一些特殊的方式窃取了美国的技术后制造了这把原型磁轨步枪。这把磁轨步枪射出的高速子弹威力巨大，且有可能点燃你的敌人。",
+    "weight": "4389 g",
+    "volume": " 3568ml",
+    "longest_side": "122 cm",
+    "price": 870000,
+    "price_postapoc": 2000000,
+    "to_hit": -1,
+    "bashing": 10,
+    "material": [ "steel" ],
+    "ammo": [ "762R" ],
+    "ups_charges": 25,
+    "range": 0,
+    "ranged_damage": { "damage_type": "heat", "amount": 40,"armor_penetration":10 },
+    "dispersion": 10,
+    "durability": 10,
+    "blackpowder_tolerance": 24,
+    "reload": 450,
+    "barrel_volume": "655 ml",
+    "default_mods": [  "bipod", "rifle_scope" ],
+    "flags": [ "NEVER_JAMS" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE_WELL", "item_restriction": [ "sv98mag" ] } ]
+  }
+]

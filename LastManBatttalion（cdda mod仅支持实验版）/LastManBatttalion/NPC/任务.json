@@ -1,0 +1,83 @@
+[
+{
+    "id": "MISSION_Liufaye_2",
+    "type": "mission_definition",
+    "name": { "str": "调查LMB" },
+    "goal": "MGOAL_NULL",
+    "description": "一支LMB小队在野外进行活动，调查他们身上的东西。",
+    "difficulty": 5,
+    "value": 0,
+    "start": {
+      "assign_mission_target": { "om_terrain": "field", "reveal_radius": 2, "random": true, "search_range": 100,
+      "z":0 },
+      "update_mapgen": {
+        "rows": [
+          "                        ",
+          "                        ",
+          "                        ",
+          "                 M      ",
+          "          b             ",
+          "                        ",
+          "           m    @bb     ",
+          "                        ",
+          "     M                  ",
+          "       b                ",
+          "       b@b    M         ",
+          "        b               ",
+          "           b            ",
+          "        M  d@b  m       ",
+          "            b           ",
+          "            M           ",
+          "     m                  ",
+          "                   M    ",
+          "          M             ",
+          "            b b         ",
+          "         b b b@bb       ",
+          "             b b        ",
+          "                        ",
+          "                        "
+        ],
+        "terrain": { "@": "t_grass", "b": "t_dirt", "M": "t_dirt" },
+        "fields": { "b": { "field": "fd_blood", "intensity": 1 } },
+        "items": { "@": { "item": "last_man_battletion_rifleman", "chance": 100 } },
+        "item": { "d": [ { "item": "lmb_data", "amount": 1 }, { "item": "corpse" } ] },
+        "monster": { "M": { "monster": "mon_mi_go_myrmidon" },
+       "m": { "monster": "mon_mi_go_scout" }
+         }
+      }
+    },
+    "end": { "effect": {
+          "u_spawn_item": "lmb_data",
+          "count": 1
+        } },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "has_generic_rewards": false,
+    "dialogue": {
+      "describe": "我手上有个活需要人去解决，有兴趣吗?",
+      "offer": "近来我们的侦查员侦查到LMB的活动有些频繁，理论上这群残兵败将不应该有这种活动，我需要人去调查他们。",
+      "accepted": "我们捕捉到他们的一支小队正在外面活动，也许他们手上有什么东西可以调查。",
+      "rejected": "我会找其他人来解决这个问题的。",
+      "advice": "或许你需要对抗LMB的士兵，你也见过他们的吧，带好武器。",
+      "inquire": "调查怎么样？",
+      "success": "这些资料里会有我们需要的东西的，干的不错。",
+      "success_lie": "你想让我们凭空获取情报吗?",
+      "failure": "…"
+    }
+  },
+  {
+    "id": "lmb_data",
+    "type": "TOOL",
+    "symbol": ",",
+    "color": "yellow",
+    "name": { "str": "LMB的电子作战设备" },
+    "description": "一台电子作战设备，上面可能记录有一些东西。",
+    "category": "other",
+    "price": 500,
+    "price_postapoc": 0,
+    "material": [ "plastic" ],
+    "flags": [ "MISSION_ITEM" ],
+    "weight": "500 g",
+    "volume": "400 ml",
+    "to_hit": -3
+  }
+]

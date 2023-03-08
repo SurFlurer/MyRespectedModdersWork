@@ -1,0 +1,52 @@
+[
+{
+    "id": "mon_miniuav",
+    "type": "MONSTER",
+    "looks_like": "mon_tankbot",
+    "name": {
+      "str": "小型UAV"
+    },
+    "description": "一台黯牙部队所控制的小型UAV，装备着一门改装的M4步枪和40mm榴弹发射器，可以说是武装到牙齿。",
+    "default_faction": "military",
+    "species": [
+      "ROBOT"
+    ],
+    "diff": 20,
+    "volume": "35000 ml",
+    "weight": "40750 g",
+    "hp": 40,
+    "speed": 80,
+    "material": [
+      "steel"
+    ],
+    "symbol": "R",
+    "color": "white",
+    "aggression": 50,
+    "morale": 100,
+    "armor_bash": 20,
+    "armor_cut": 30,
+    "armor_bullet": 40,
+    "vision_day": 40,
+    "vision_night": 5,
+    "starting_ammo": { "40x46mm_m433": 8, "556": 90 },
+    "revert_to_itype": "bot_miniuav",
+    "special_attacks": [
+      [ "MULTI_ROBOT", 5 ]
+    ],
+    "death_drops":  { "groups": [ [ "robots", 2 ]  ] },
+    "death_function": { "corpse_type": "BROKEN" },
+    "flags": [
+      "SEES",
+      "HEARS",
+      "GOODHEARING",
+      "NOHEAD",
+      "BASHES",
+      "DESTROYS",
+      "NO_BREATHE",
+      "ELECTRONIC",
+      "PRIORITIZE_TARGETS",
+      "DROPS_AMMO",
+      "PLASTIC"
+    ]
+  }
+]

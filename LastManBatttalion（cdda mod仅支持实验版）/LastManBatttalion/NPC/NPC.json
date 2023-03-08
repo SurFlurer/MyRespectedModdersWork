@@ -1,0 +1,58 @@
+[
+{
+    "type": "npc",
+    "id": "nanming",
+    "name_unique": "难民",
+    "class": "NC_BONE_SEER",
+    "attitude": 7,
+    "mission": 3,
+    "chat": "TALK_nanming",
+    "faction": "JTF"
+  },
+  {
+    "type": "npc",
+    "id": "JTF_soldier",
+    "name_suffix": "JTF士兵",
+    "class": "JTF_soldier",
+    "attitude": 7,
+    "mission": 3,
+    "chat": "TALK_JTF",
+    "faction": "JTF"
+  },
+  {
+    "type": "npc",
+    "id": "shd_agent",
+    "name_unique": "刘菲",
+    "name_suffix": "国土战略局调度员",
+    "gender": "female",
+    "class": "shd_agent",
+    "attitude": 7,
+    "mission": 3,
+    "chat": "TALK_shd_agent",
+    "faction": "JTF",
+	"mission_offered": "MISSION_shd_agent"
+  },
+  {
+    "type": "npc",
+    "id": "rouge_agent_hk416",
+    "name_unique": "獠牙",
+    "name_suffix": "叛变特工",
+    "gender": "female",
+    "class": "rouge_agent_hk416",
+    "attitude": 7,
+    "mission": 3,
+    "chat": "TALK_hk416",
+    "faction": "JTF",
+	"mission_offered": "MISSION_hk416"
+  },
+  {
+    "type": "npc",
+    "id": "JTF_need",
+    "name_suffix": "JTF军需官",
+    "class": "JTF_need_office",
+    "attitude": 7,
+    "mission": 3,
+    "chat": "TALK_JTF_need",
+    "faction": "JTF"
+  }
+  ]

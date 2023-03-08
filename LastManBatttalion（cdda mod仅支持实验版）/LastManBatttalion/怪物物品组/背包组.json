@@ -1,0 +1,25 @@
+[
+{
+    "id": "lmb_scav_pack",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+		"item":"molle_pack",
+		"contents-group":"lmb_scav_pack_group"
+	}
+          ]
+},
+{
+    "id": "lmb_scav_pack_group",
+    "type": "item_group",
+    "subtype": "collection",
+    "item": [
+    {"item":"tarp","count":[1,3]},
+    {"item":"glowstick","count":[2,5]},
+    {"item":"handflare","count":[1,2]},
+    {"item":"e_tool","prob":80},
+    {"item":"mre_beec_box","count":[1,3]}
+]
+}
+]

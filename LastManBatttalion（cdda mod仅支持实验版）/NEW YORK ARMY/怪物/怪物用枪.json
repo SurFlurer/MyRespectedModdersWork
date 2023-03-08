@@ -1,0 +1,23 @@
+[
+{
+    "id": "military_p416_R",
+    "type":"GUN",
+    "name":{"str":"p416+"},
+    "copy-from": "military_p416",
+    "ranged_damage": { "damage_type": "electric", "amount":5}
+  },
+  {
+    "id": "hk_mp5_S",
+    "type":"GUN",
+    "name":{"str":"mp5+"},
+    "copy-from": "hk_mp5",
+    "ranged_damage": { "damage_type": "cold", "amount": 10}
+  },
+  {
+    "id": "saiga_12_A",
+    "type":"GUN",
+    "name":{"str":"saiga12+"},
+    "copy-from": "saiga_12",
+    "ranged_damage": { "damage_type": "cold", "amount": 4}
+  }
+]

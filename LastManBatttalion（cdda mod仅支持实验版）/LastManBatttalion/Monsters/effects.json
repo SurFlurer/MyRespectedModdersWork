@@ -1,0 +1,12 @@
+[
+{
+    "type": "effect_type",
+    "id": "LMB_squad",
+    "name": [ "受到指挥" ],
+    "desc": [ "前进!" ],
+    "rating": "good",
+    "blocks_effects": [ "sensor_stun", "dazed", "stunned", "blind" ],
+    "base_mods": { "dex_mod": [ 0.5 ], "speed_mod": [ 50 ] },
+    "show_in_info": true
+  }
+  ]

@@ -1,0 +1,12 @@
+[
+{
+    "type": "npc",
+    "id": "russia_merchant",
+    "name_suffix": "俄国商人",
+    "class": "russia_merchant",
+    "attitude": 7,
+    "mission": 3,
+    "chat": "TALK_merchant_russia",
+    "faction": "free_merchants"
+  }
+]

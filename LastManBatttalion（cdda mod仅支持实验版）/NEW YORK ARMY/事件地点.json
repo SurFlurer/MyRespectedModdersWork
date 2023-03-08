@@ -1,0 +1,138 @@
+[
+{
+    "id": "mx_lmb_巡逻",
+    "type": "map_extra",
+    "name": {
+      "str": "巡逻小队"
+    },
+    "description": "一伙LMB的巡逻小队在这。",
+    "generator": {
+      "generator_method": "update_mapgen",
+      "generator_id": "mx_lmb_新巡逻"
+    },
+    "sym": "R",
+    "color": "white",
+    "autonote": true
+  },
+{
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "mx_lmb_新巡逻",
+    "object": { "place_nested": [ { "chunks": [ "mx_lmb_新巡逻" ], "x": 0, "y": 0 } ] }
+  },
+{
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "mx_lmb_新巡逻",
+    "object": {
+      "mapgensize": [
+        3,
+        3
+      ],
+      "rotation": [
+        0,
+        3
+      ],
+      "place_monster": [
+      {
+          "monster": "mon_miniuav",
+          "x": 13,
+          "y": 12
+          },
+        {
+          "monster": "LMB_new_Rifleman",
+          "x": 10,
+          "y": 10
+          },
+          {
+          "monster": "LMB_new_Rifleman",
+          "x": 11,
+          "y": 11
+          },
+          {
+          "monster": "LMB_new_Rifleman",
+          "x": 12,
+          "y": 12
+          },
+          {
+          "monster": "LMB_new_Rifleman",
+          "x": 9,
+          "y": 9
+          },
+          {
+          "monster": "LMB_squad_leader",
+          "x": 9,
+          "y": 10
+          }
+          ]
+          }
+          },
+          {
+    "id": "mx_lmb_工程师",
+    "type": "map_extra",
+    "name": {
+      "str": "机器人测试小组"
+    },
+    "description": "几名LMB的战斗工兵在这测试黯牙提供的UAV。",
+    "generator": {
+      "generator_method": "update_mapgen",
+      "generator_id": "mx_lmb_工程师"
+    },
+    "sym": "E",
+    "color": "white",
+    "autonote": true
+  },
+{
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "mx_lmb_工程师",
+    "object": { "place_nested": [ { "chunks": [ "mx_lmb_工程师" ], "x": 0, "y": 0 } ] }
+  },
+{
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "mx_lmb_工程师",
+    "object": {
+      "mapgensize": [
+        3,
+        3
+      ],
+      "rotation": [
+        0,
+        3
+      ],
+      "place_monster": [
+      {
+          "monster": "mon_miniuav",
+          "x": 13,
+          "y": 12
+          },
+        {
+          "monster": "mon_miniuav",
+          "x": 10,
+          "y": 10
+          },
+          {
+          "monster": "mon_miniuav",
+          "x": 11,
+          "y": 11
+          },
+          {
+          "monster": "mon_miniuav",
+          "x": 12,
+          "y": 12
+          },
+          {
+          "monster": "LMB_Engineer",
+          "x": 9,
+          "y": 9
+          },
+          {
+          "monster": "LMB_Engineer",
+          "x": 9,
+          "y": 10
+          }
+          ]
+          }
+          }
+]

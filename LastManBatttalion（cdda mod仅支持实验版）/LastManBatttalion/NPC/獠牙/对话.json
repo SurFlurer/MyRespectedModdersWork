@@ -1,0 +1,180 @@
+[
+{
+    "id": "TALK_hk416",
+    "type": "talk_topic",
+    "dynamic_line": "有什么事情吗",
+    "responses": [
+      {
+        "text": "你是谁？",
+        "topic": "TALK_hk416_A"
+      },
+      {
+        "text": "你在这里做什么?",
+        "topic": "TALK_hk416_B"
+      },
+      {
+        "text": "有什么我可以帮忙的吗？",
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "[跟随]你现在有什么打算吗?",
+        "topic": "TALK_hk416_go",
+        "condition": {
+          "u_has_item": "404_weapon"
+        }
+        },
+      {
+        "text": "我要先走了",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_hk416_A",
+    "type": "talk_topic",
+    "dynamic_line": "我只是一名叛变特工....曾经是。",
+    "responses": [
+      {
+        "text": "那现在呢?",
+        "topic": "TALK_hk416_A_1"
+      },
+      {
+        "text": "好吧。",
+        "topic": "TALK_shd_agent"
+      }
+    ]
+  },
+  {
+    "id": "TALK_hk416_A_1",
+    "type": "talk_topic",
+    "dynamic_line": "现在我只想好好的活在这里。",
+    "responses": [
+      {
+        "text": "挺现实的。",
+        "topic": "TALK_hk416"
+      }
+    ]
+  },
+  {
+    "id": "TALK_hk416_B",
+    "type": "talk_topic",
+    "dynamic_line": "歇脚，休息。这里的那些人愿意给我留个空位，只要我安分守己。",
+    "responses": [
+      {
+        "text": "我还以为他们不会让你在这的。",
+        "topic": "TALK_hk416_B_1"
+      },
+      {
+        "text": "那你平常做什么，一直待在这里吗?",
+        "topic": "TALK_hk416_B_2"
+      }
+    ]
+  },
+  {
+    "id": "TALK_hk416_B_1",
+    "type": "talk_topic",
+    "dynamic_line": "显然是我过去的名声不差，也没做过什么事情。",
+    "responses": [
+      {
+        "text": "不管怎么样，至少你在这了 ",
+        "topic": "TALK_hk416"
+      }
+    ]
+  },
+  {
+    "id": "TALK_hk416_B_2",
+    "type": "talk_topic",
+    "dynamic_line": "出去搜索物资、观察尸潮情况、看看外边有没有土匪游荡。作为精英人....特工，我的准则不允许我在这混吃混喝。",
+    "responses": [
+      {
+        "text": "挺好的。",
+        "topic": "TALK_hk416"
+      }
+    ]
+  },
+  {
+    "id": "TALK_hk416_go",
+    "type": "talk_topic",
+    "dynamic_line": "打算?我目前还没有，但是....(看了一眼你)也许我可以考虑跟你一起上路。",
+    "responses": [
+      {
+        "text": "[交付一个徽章]要加入我的队伍吗?我可以接受多带一个人的。",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "u_has_items": {
+              "item": "404_weapon",
+              "count": 1
+            }
+          }
+        },
+        "success": {
+        "topic": "TALK_hk416_go_1",
+        "effect": [
+            {
+              "u_sell_item": "404_weapon",
+              "count": 1
+            },
+            {
+              "npc_consume_item": "404weapon",
+              "count": 1
+            }
+            ]
+        },
+        "failure": {
+          "topic": "TALK_hk416"
+        }
+      },
+      {
+        "text": "让我想想....。",
+        "topic": "TALK_hk416"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_hk416_go_1",
+    "dynamic_line": "在这呆着也没什么意思，让我们出发吧。“就让我的价值，在这场战斗中实现吧”",
+    "responses": [
+      {
+        "text": "那我们走吧。",
+        "topic": "TALK_DONE",
+        "effect": "follow"
+      }
+    ]
+  },
+  {
+    "id": "MISSION_hk416",
+    "type": "mission_definition",
+    "name": {
+      "str": "寻找M320"
+    },
+    "description": "特工獠牙委托你帮他寻找一把M320榴弹发射器。",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 5,
+    "value": 50000,
+    "item": "m320",
+    "end": {
+      "effect": [
+        {
+          "u_spawn_item": "404_weapon",
+          "count": 1
+        }
+      ]
+    },
+    "origins": [
+      "ORIGIN_SECONDARY"
+    ],
+    "dialogue": {
+      "describe": "我确实有件事需要别人帮我，你有兴趣吗?",
+      "offer": "我的国土战略局吊舱发射器在上次行动弄丢了，眼下需要把M320来补上这个火力空缺。",
+      "accepted": "很好，那就麻烦你了。",
+      "rejected": "。。。。。",
+      "advice": "去找找军事地点，M320现在部分装备着 那些地方肯定会有的。",
+      "inquire": "怎么样？",
+      "success": "不错，很感谢你，正好我也有了些新计划......",
+      "success_lie": "(来自作者的话)你觉得你没找到物品，但是任务完成了，这合理吗",
+      "failure": "没找到?看来只能将就着了。"
+    }
+  }
+  ]

@@ -1,0 +1,68 @@
+[
+{
+    "id": "military_ballistic_vest",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "distribution": [
+          {
+            "item": "ballistic_vest_esapi",
+            "variant": "us_ballistic_vest",
+            "contents-group": "used_kitted_medium_vest",
+            "prob": 100
+          },
+          {
+            "collection": [
+              { "item": "ballistic_vest_esapi", "variant": "us_ballistic_vest", "contents-group": "some_esapi_plates" },
+              { "group": "loaded_lbv" }
+            ],
+            "prob": 50
+          }
+        ],
+        "prob": 40
+      },
+      {
+        "collection": [
+          { "item": "level_3_vest", "variant": "national_guard_armor_vest", "contents-group": "some_esapi_front_plates" },
+          { "group": "loaded_lbv" }
+        ],
+        "prob": 50
+      },
+      { "group": "military_ballistic_vest_light", "prob": 10 }
+    ]
+  },
+  {
+    "id": "military_ballistic_vest_heavy",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "distribution": [
+          {
+            "item": "ballistic_vest_heavy",
+            "variant": "us_ballistic_vest",
+            "contents-group": "used_kitted_medium_vest",
+            "prob": 100
+          },
+          {
+            "collection": [
+              { "item": "ballistic_vest_heavy", "variant": "us_ballistic_vest", "contents-group": "some_esapi_plates" },
+              { "group": "loaded_lbv" }
+            ],
+            "prob": 50
+          }
+        ],
+        "prob": 40
+      },
+      {
+        "collection": [
+          { "item": "level_3_vest", "variant": "national_guard_armor_vest", "contents-group": "some_esapi_front_plates" },
+          { "group": "loaded_lbv" }
+        ],
+        "prob": 50
+      },
+      { "group": "military_ballistic_vest_light", "prob": 10 }
+    ]
+  }
+  ]

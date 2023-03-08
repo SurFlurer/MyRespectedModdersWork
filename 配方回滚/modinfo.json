@@ -1,0 +1,15 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "CC_purifier ss",
+    "name": "配方回滚",
+    "authors": [
+      "Remyxia~", "豆子&middo"
+    ],
+    "description": "把余震移除的智能净化血清和牵引车架配方添加回来,等级达到后自动解锁,让马不再害怕丧尸,顺便加了个能处理垃圾填埋坑~",
+    "category": "misc_additions",
+    "dependencies": [
+      "dda"
+    ]
+  }
+]

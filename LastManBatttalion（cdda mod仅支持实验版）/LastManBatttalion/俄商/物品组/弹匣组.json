@@ -1,0 +1,14 @@
+[
+{
+    "type": "item_group",
+    "id": "russia_mag",
+    "subtype": "collection",
+    "entries": [
+    { "item": "akmag30", "count": [2,3],"prob":80 },
+    { "item": "akmag40", "count": [1,2],"prob":40 },
+    { "item": "ak74mag", "count": [2,3],"prob":80 },
+    { "item": "rpk74mag", "count": [1,2],"prob":40 },
+    { "item": "casket74mag", "count": [1,2],"prob":40 }
+    ]
+    }
+]

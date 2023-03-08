@@ -1,0 +1,81 @@
+[
+  {
+    "type": "overmap_special",
+    "id": "LMB_Bunker",
+    "overmaps": [
+      { "point": [ 0, -1, 0 ], "overmap": "road_end_north" },
+      { "point": [ 0, 0, 0 ], "overmap": "bunker_LMB_north" },
+      { "point": [ 0, 0, -1 ], "overmap": "bunker_basement_LMB_north" }
+    ],
+    "connections": [ { "point": [ 0, -1, 0 ], "from": [ 0, 0, 0 ] } ],
+    "locations": [ "forest" ],
+    "city_distance": [ 20, -1 ],
+    "occurrences": [ 70, 100 ],
+    "flags": [ "MILITARY", "UNIQUE" ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "LMB_JTF",
+    "overmaps": [
+      { "point": [ 0, -1, 0 ], "overmap": "road_end_north" },
+      { "point": [ 0, 0, 0 ], "overmap": "bunker_JTF_north" },
+      { "point": [ 0, 0, -1 ], "overmap": "bunker_basement_JTF_north" }
+    ],
+    "connections": [ { "point": [ 0, -1, 0 ], "from": [ 0, 0, 0 ] } ],
+    "locations": [ "forest" ],
+    "city_distance": [ 20, -1 ],
+    "occurrences": [ 100, 100 ],
+    "flags": [ "MILITARY", "UNIQUE" ]
+  },
+    {
+    "type": "overmap_special",
+    "id": "Military_Outpost",
+    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "outpost_LMB_north" } ],
+    "locations": [ "wilderness" ],
+    "city_distance": [ 15, -1 ],
+    "occurrences": [ 80, 100 ],
+    "flags": [ "MILITARY", "UNIQUE" ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "Military_Outpost",
+    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "outpost_cross_LMB_north" } ],
+    "locations": [ "wilderness" ],
+    "city_distance": [ 15, -1 ],
+    "occurrences": [ 80, 100 ],
+    "flags": [ "MILITARY", "UNIQUE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "helipad_nw_LMB",
+      "helipad_ne_LMB",
+      "helipad_sw_LMB",
+      "helipad_se_LMB",
+      "helipad2f_nw_LMB",
+      "helipad2f_ne_LMB",
+      "helipad2f_sw_LMB",
+      "helipad2f_se_LMB"
+    ],
+    "copy-from": "LMB_mil_helipad"
+  },
+  {
+    "type": "overmap_special",
+    "id": "LMB_helipad",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "helipad_nw_LMB_north" },
+      { "point": [ 1, 0, 0 ], "overmap": "helipad_ne_LMB_north" },
+      { "point": [ 0, 1, 0 ], "overmap": "helipad_sw_LMB_north" },
+      { "point": [ 1, 1, 0 ], "overmap": "helipad_se_LMB_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "helipad2f_nw_LMB_north" },
+      { "point": [ 1, 0, 1 ], "overmap": "helipad2f_ne_LMB_north" },
+      { "point": [ 0, 1, 1 ], "overmap": "helipad2f_sw_LMB_north" },
+      { "point": [ 1, 1, 1 ], "overmap": "helipad2f_se_LMB_north" }
+    ],
+    "locations": [ "land" ],
+    "connections": [ { "point": [ 0, -1, 0 ], "terrain": "road", "connection": "local_road", "from": [ 0, 0, 0 ] } ],
+    "city_distance": [ 10, -1 ],
+    "occurrences": [ 90, 100 ],
+    "flags": [ "CLASSIC", "MILITARY", "UNIQUE" ]
+  }
+  ]

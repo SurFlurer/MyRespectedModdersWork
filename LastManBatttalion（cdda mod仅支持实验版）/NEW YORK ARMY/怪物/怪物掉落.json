@@ -1,0 +1,17 @@
+[
+{
+	"type":"item_group",
+	"id":"miniuav_group",
+	"subtype":"distribution",
+	"entries":[
+	{
+		"item":"556",
+		"count":60
+	},
+	{
+		"item":"40x46mm_m433",
+		"count":4
+	}
+	]
+}
+]

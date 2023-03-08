@@ -1,0 +1,11 @@
+[
+{
+    "type": "item_group",
+    "id": "russia_merchant",
+    "items": [
+      { "group": "russia_mag" },
+      { "group": "russia_gun" },
+      { "group": "russia_ammo" }
+    ]
+  }
+]

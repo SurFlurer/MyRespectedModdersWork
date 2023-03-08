@@ -1,0 +1,12 @@
+[
+{
+    "type": "item_group",
+    "id": "russia_ammo",
+    "subtype": "collection",
+    "entries": [
+    { "group": "ammo_can_ammo_pouch_545_full", "count": 2 },
+    { "group": "ammo_can_ammo_pouch_762_39_full", "count": 2 },
+    { "group": "ammo_can_ammo_pouch_762_54R_full", "count": 2 }
+    ]
+    }
+]

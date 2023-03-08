@@ -1,0 +1,16 @@
+[
+{
+    "type": "GENERIC",
+    "id": "note_lmb_1",
+    "looks_like": "survnote",
+    "category": "books",
+    "symbol": ",",
+    "color": "white",
+    "name": {"str": "电话录音记录-两名LMB士兵在讨论其他势力" },
+    "description": "士兵A:你说除了我们谁还能拯救一切吗?\n士兵B:你说说看还有谁?\n士兵A:旧世守护者?\n士兵B:除了上次我们碰到那个小队外你还见过其他人吗?\n士兵A:自由商会呢?\n士兵B:一群投机分子，之前有个商人来过我们营地，结果他根本没什么东西跟我们换。\n士兵A:那个叫hub的研究组织呢?\n士兵B:一群洞穴老鼠，没见过他们出来过地表，听说有个研究员上来过地表实验他们的机器人结果被杀死了。\n士兵A:那看来只有我们了\n士兵B:显然是的。",
+    "material": ["paper"],
+    "flags": "TRADER_AVOID",
+    "weight": "3 g",
+    "volume": "1 ml"
+  }
+]

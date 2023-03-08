@@ -1,0 +1,136 @@
+[
+{
+    "type": "GENERIC",
+    "category": "currency",
+    "id": "Phoenix",
+    "name": { "str": "凤凰币" },
+    "description": "一枚硬币，上面的图案似乎是个橙色的凤凰在火焰之上。虽然是JTF内部人员交易用的，但似乎也能和其他人交易。",
+    "price": 5000,
+    "price_postapoc": 8000,
+    "weight": "1 g",
+    "volume": "1 ml",
+    "to_hit": -3,
+    "color": "yellow",
+    "symbol": "$",
+    "material": [ "gold" ]
+  },
+  {
+    "id": "agent_hunter_line",
+    "copy-from": "string_36",
+    "type": "GENERIC",
+    "name": { "str": "猎人背带" },
+    "description": "从特工猎人身上拿下的背带，上面绑着几个血迹斑斑的SHD特工的手表。看来你把这个拿回去调度员会知道发生了什么事的。",
+    "armor_data": {
+      "armor": [
+        {
+          "material": [ { "type": "cotton", "covered_by_mat": 100, "thickness": 2.0 } ],
+          "encumbrance": 3,
+          "coverage": 10,
+          "covers": [ "torso" ],
+          "specifically_covers": [ "torso_hanging_back" ]
+        }
+      ]
+    },
+    "proportional": { "weight": 6, "volume": 6, "price": 6 },
+    "extend": { "flags": [ "TIE_UP", "BELTED", "WATER_FRIENDLY", "OVERSIZE" ] }
+  },
+  {
+    "id": "shd_medical_bag",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+      "str": "SHD医疗包"
+    },
+    "description": "国土战略局下发给特工们所使用的医疗包，能够快速的治疗一定的伤口和疼痛。",
+    "weight": "1350 g",
+    "volume": "2000 ml",
+    "price": "114514 USD",
+    "price_postapoc": "45 USD",
+    "stack_size": 50,
+    "material": [
+      "dry_plant"
+    ],
+    "symbol": "+",
+    "color": "red",
+    "charges": 1,
+    "healthy": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "shd_medical_bag",
+      "no_fail": true,
+      "level": 0
+    },
+    "flags": [
+      "NPC_SAFE",
+      "INEDIBLE"
+    ]
+  },
+  {
+  "//":"没啥意义，删",
+    "id": "shd_naizhen",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": {
+      "str": "国土战略局治疗针"
+    },
+    "description": "国土战略局的一些特工使用的特殊治疗品，虽然比普通的医疗包回复效果差，但是使用时间是医疗包的1/10。“不受电力值影响回复。”",
+    "weight": "500 g",
+    "volume": "100 ml",
+    "price": "114514 USD",
+    "price_postapoc": "45 USD",
+    "stack_size": 5,
+    "material": [
+      "dry_plant"
+    ],
+    "symbol": "+",
+    "color": "green",
+    "charges": 1,
+    "healthy": 1,
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "SHD_naizhen",
+      "no_fail": true,
+      "level": 0
+    },
+    "flags": [
+      "NPC_SAFE",
+      "INEDIBLE"
+    ]
+  },
+  {
+    "abstract": "模板",
+    "type": "TOOL",
+    "//":"感谢调试员咖啡大佬所提供的模板(",
+    "name": {
+      "str": "magic seal base"
+    },
+    "material": [
+      "steel"
+    ],
+    "symbol": ",",
+    "weight": "50 g",
+    "volume": "250 ml",
+    "flags": [
+      "NO_SALVAGE",
+      "UNBREAKABLE_MELEE"
+    ]
+  },
+  {
+    "id": "raider_new",
+    "copy-from": "模板",
+    "type": "TOOL",
+    "name": "突袭者升级套件",
+    "description": "SHD影子技术部门战前所研发的实验性升级部件，这个部件为军用外骨骼进行一种特殊的升级。",
+    "price_postapoc": 500,
+    "color": "light_gray"
+  },
+  {
+    "id": "new_ai_module",
+    "copy-from": "模板",
+    "type": "TOOL",
+    "name": "高级火控部件",
+    "description": "一个由SHD影子技术部门和16LAB研究所合作的成品，能够为部分枪械进行史诗级升级。",
+    "price_postapoc": 500,
+    "color": "light_gray"
+  }
+  ]

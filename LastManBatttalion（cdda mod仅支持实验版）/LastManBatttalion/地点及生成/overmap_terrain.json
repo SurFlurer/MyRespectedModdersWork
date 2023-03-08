@@ -1,0 +1,61 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": "bunker_LMB",
+    "name": "幸存者军队掩体",
+    "sym": "B",
+    "color": "white",
+    "see_cost": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "bunker_basement_LMB",
+    "name": "幸存者军队掩体",
+    "sym": "B",
+    "color": "white",
+    "see_cost": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "outpost_cross_LMB",
+    "name": "幸存者军队哨站",
+    "sym": "M",
+    "color": "white",
+    "see_cost": 2,
+    "extras": "build"
+  },
+ {
+    "type": "overmap_terrain",
+    "id": "outpost_LMB",
+    "name": "幸存者军队哨站",
+    "sym": "M",
+    "color": "white",
+    "see_cost": 2,
+    "extras": "build"
+  },
+    {
+    "type": "overmap_terrain",
+    "abstract": "LMB_mil_helipad",
+    "name": "幸存者军队停机坪",
+    "sym": "H",
+    "color": "white",
+    "see_cost": 5,
+    "flags": [ "SOURCE_FUEL", "SOURCE_GUN", "SOURCE_VEHICLES", "RISK_HIGH" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "bunker_JTF",
+    "name": "JTF据点",
+    "sym": "B",
+    "color": "green",
+    "see_cost": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "bunker_basement_JTF",
+    "name": "JTF据点",
+    "sym": "B",
+    "color": "green",
+    "see_cost": 2
+  }
+  ]

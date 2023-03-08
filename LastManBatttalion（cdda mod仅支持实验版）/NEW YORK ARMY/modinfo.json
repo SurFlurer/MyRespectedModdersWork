@@ -1,0 +1,14 @@
+[
+{
+	"type":"MOD_INFO",
+	"id":"LMB_DLC",
+	"name":"幸存者军队_新英格兰军阀拓展包",
+	"authors":["NF404HK416"],
+	"maintainers": ["NF404HK416"],
+	"description":"请注意，此mod正在被停用，将来会进行修改，游戏内容不算完善但仍可使用\n长期以来隐藏自身存在的雇佣兵军团黯牙已经开始活动，试图夺取全美的控制权。现在黯牙已经将英格兰地区的幸存者军队收编并为他们提供装备和物资，以便支援他们在英格兰地区的行动.....时间正在流逝。",
+	"category":"content",
+	"version": "更新日期/updated 2022/8/26",
+	"obsolete": true,
+	"dependencies":["dda","aftershock","LMB"]
+}
+]

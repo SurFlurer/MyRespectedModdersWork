@@ -1,0 +1,54 @@
+[
+     {
+    "id": "TALK_nanming",
+    "type": "talk_topic",
+    "dynamic_line": "又一位幸存者，你好",
+    "responses": [
+      {
+        "text": "你觉得在这里怎么样？",
+        "topic": "TALK_nanming_1"
+      },
+      {
+        "text": "再见。",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_nanming_1",
+    "type": "talk_topic",
+    "dynamic_line": "这里物资充足，房间足够，而且那些JTF愿意让我们留下并保护我们，太令人兴奋了。",
+    "responses": [
+      {
+        "text": "听起来太好了。",
+        "topic": "TALK_nanming"
+      }
+    ]
+  },
+  {
+    "id": "TALK_JTF",
+    "type": "talk_topic",
+    "dynamic_line": "你好，幸存者，欢迎在这停留。",
+    "responses": [
+      {
+        "text": "这里的情况怎么样?",
+        "topic": "TALK_JTF_1"
+      },
+      {
+        "text": "再见，谢谢你的时间。",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_JTF_1",
+    "type": "talk_topic",
+    "dynamic_line": "这里的守备力量充足，而且我们有国土战略局调度员提供的资料可以找到联邦政府在战前贮藏物资的地点。靠着这些我们还能再撑上几十年。",
+    "responses": [
+      {
+        "text": "听起来真令人充满希望!",
+        "topic": "TALK_JTF"
+      }
+    ]
+  }
+  ]

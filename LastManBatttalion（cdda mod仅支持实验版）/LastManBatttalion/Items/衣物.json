@@ -1,0 +1,579 @@
+[
+{
+"//":"废弃，有空删了",
+    "id": "army_exoskeleton",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "军用外骨骼" },
+    "description": "美国军方的实验装备之一，目的是为为士兵提供助力。穿戴后可以提升一定移速和力量",
+    "relic_data": {
+        "passive_effects": [
+            {
+                "has": "WORN",
+                "condition": "ALWAYS",
+                "values": [
+                    {
+                        "value": "SPEED",
+                        "add": 10
+                    },
+                    {
+                        "value": "STRENGTH",
+                        "add": 2
+                    }
+                ]
+            }
+        ]
+    },
+    "weight": "30 kg",
+    "volume": "10 L",
+    "price": 11451400,
+    "price_postapoc": 400000,
+    "to_hit": 1,
+    "bashing": 1,
+    "material": [ "qt_steel", "hyperweave_off", "kevlar_rigid" ],
+    "symbol": "[",
+    "color": "dark_gray"
+  },
+  {
+    "id": "raider_exoskeleton",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "突袭者外骨骼" },
+    "description": "国土战略局的实验性技术之一，在军用外骨骼上装满了传感器以便随时收集周围环境和敌人的信息并传递给设备使用者。",
+    "relic_data": {
+        "passive_effects": [
+            {
+                "has": "WORN",
+                "condition": "ALWAYS",
+                "values": [
+                    {
+                        "value": "DEXTERITY",
+                        "add": 8
+                    }
+                ]
+            }
+        ]
+    },
+    "weight": "30 kg",
+    "volume": "10 L",
+    "price": 11451400,
+    "price_postapoc": 400000,
+    "to_hit": 1,
+    "bashing": 1,
+    "material": [ "qt_steel", "hyperweave_off", "kevlar_rigid" ],
+    "symbol": "[",
+    "color": "dark_gray"
+  },
+{
+    "id": "JTF_esapi",
+    "type": "ARMOR",
+    "category": "armor",
+    "looks_like":"ballistic_vest_esapi",
+    "name": { "str": "JTF防弹背心" },
+    "description": "一件美军标准的防弹背心，唯一不同的是上面有部分地方被涂上绿色的漆料，印上了JTF。",
+    "weight": "2911 g",
+    "volume": "6 L",
+    "price": 160000,
+    "price_postapoc": 1000,
+    "symbol": "[",
+    "material": [ "nylon", "kevlar_layered" ],
+    "color": "light_gray",
+    "warmth": 15,
+    "flags": [ "STURDY", "OUTER", "WATER_FRIENDLY" ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "max_contains_volume": "1600 ml",
+        "max_contains_weight": "5 kg",
+        "moves": 200,
+        "description": "Pocket for front plate",
+        "flag_restriction": [ "ABLATIVE_LARGE" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "max_contains_volume": "1600 ml",
+        "max_contains_weight": "5 kg",
+        "moves": 200,
+        "description": "Pocket for back plate",
+        "flag_restriction": [ "ABLATIVE_LARGE" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "2 kg",
+        "moves": 200,
+        "description": "Pocket for right side plate",
+        "flag_restriction": [ "ABLATIVE_MEDIUM" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "2 kg",
+        "moves": 200,
+        "description": "Pocket for left side plate",
+        "flag_restriction": [ "ABLATIVE_MEDIUM" ]
+      }
+    ],
+    "armor": [
+      {
+        "material": [
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 3.0 },
+          { "type": "kevlar_layered", "covered_by_mat": 95, "thickness": 3.0,"ignore_sheet_thickness":true }
+        ],
+        "encumbrance": [ 6, 6 ],
+        "coverage": 100,
+        "cover_vitals": 90,
+        "covers": [ "torso" ]
+      }
+    ]
+  },
+  {
+    "id": "shd_pants",
+    "repairs_like": "jeans",
+    "type": "ARMOR",
+    "looks_like":"pants_army",
+    "name": { "str_sp": "特工长裤" },
+    "description": "一条国土战略局分发的长裤，在军用长裤的基础上做了改动以提升使用者在CBRN环境下的生存能力，在增加了不低防御力的同时减少了累赘。",
+    "weight": "720 g",
+    "volume": "2500 ml",
+    "price": 3500,
+    "price_postapoc": 250,
+    "material": [ "nomex","kevlar_layered" ],
+    "symbol": "[",
+    "color": "green",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "4 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "19 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "4 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "19 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "4 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "19 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1500 ml",
+        "max_contains_weight": "4 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "19 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1250 ml",
+        "max_contains_weight": "4 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "165 mm",
+        "moves": 100
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1250 ml",
+        "max_contains_weight": "4 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "165 mm",
+        "moves": 100
+      }
+    ],
+    "warmth": 25,
+    "material_thickness": 8,
+    "environmental_protection": 20,
+    "flags": [ "VARSIZE", "POCKETS","STURDY","WATERPROOF", "RAINPROOF", "GAS_PROOF", "RAD_PROOF" ],
+    "armor": [ { "encumbrance": [ 7, 15 ], "coverage": 100, "covers": [ "leg_l", "leg_r" ] } ]
+  },
+  {
+    "id": "shd_jacket",
+    "repairs_like": "trenchcoat",
+    "type": "ARMOR",
+    "looks_like":"jacket_army",
+    "name": { "str_sp": "特工夹克" },
+    "description": "一件国土战略局分发的标准衣物，在普通的军用夹克上做了改动以提升使用者的CBRN环境生存能力和战斗力，极大的增加了防护力的同时也减少了累赘。",
+    "weight": "780 g",
+    "volume": "3 L",
+    "price": 3500,
+    "price_postapoc": 1050,
+    "material": [ "nomex","kevlar_layered" ],
+    "symbol": "[",
+    "color": "green",
+    "armor": [
+      { "covers": [ "torso" ], "coverage": 100, "encumbrance": [ 7, 10 ] },
+      { "covers": [ "arm_l", "arm_r" ], "coverage": 100, "encumbrance": [ 7, 8 ] }
+    ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "2 kg",
+        "weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "15 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1200 ml",
+        "max_contains_weight": "2 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "15 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 ml",
+        "max_contains_weight": "2 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "15 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1000 ml",
+        "max_contains_weight": "2 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "15 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "1 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "13 cm",
+        "moves": 120
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "1 kg",
+		"weight_multiplier":0.5,
+		"volume_multiplier":0.6,
+        "max_item_length": "13 cm",
+        "moves": 120
+      }
+    ],
+    "warmth": 25,
+    "material_thickness": 5,
+    "environmental_protection": 20,
+    "valid_mods": [ "steel_padded" ],
+    "flags": [ "VARSIZE", "POCKETS", "OUTER","STURDY","WATERPROOF", "RAINPROOF", "GAS_PROOF",  "RAD_PROOF" ],
+    "use_action": [ { "type": "attach_molle", "size": 6 }, { "type": "detach_molle" } ]
+  },
+  {
+    "id": "shd_esapi",
+    "type": "ARMOR",
+    "category": "armor",
+    "looks_like":"ballistic_vest_esapi",
+    "name": { "str": "国土战略局特工防弹背心" },
+    "description": "一件国土战略局分发的标准防弹背心，在提供了不错的防御力的同时减少了累赘并且增加了存储空间。",
+    "weight": "2911 g",
+    "volume": "6 L",
+    "price": 160000,
+    "price_postapoc": 1000,
+    "symbol": "[",
+    "material": [ "nylon", "kevlar_layered" ],
+    "color": "light_gray",
+    "warmth": 15,
+    "flags": [ "STURDY", "OUTER", "WATER_FRIENDLY" ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "max_contains_volume": "1600 ml",
+        "max_contains_weight": "5 kg",
+		"weight_multiplier":0.4,
+        "moves": 200,
+        "description": "Pocket for front plate",
+        "flag_restriction": [ "ABLATIVE_LARGE" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "max_contains_volume": "1600 ml",
+        "max_contains_weight": "5 kg",
+		"weight_multiplier":0.4,
+        "moves": 200,
+        "description": "Pocket for back plate",
+        "flag_restriction": [ "ABLATIVE_LARGE" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "2 kg",
+		"weight_multiplier":0.4,
+        "moves": 200,
+        "description": "Pocket for right side plate",
+        "flag_restriction": [ "ABLATIVE_MEDIUM" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "ablative": true,
+        "max_contains_volume": "800 ml",
+        "max_contains_weight": "2 kg",
+		"weight_multiplier":0.4,
+        "moves": 200,
+        "description": "Pocket for left side plate",
+        "flag_restriction": [ "ABLATIVE_MEDIUM" ]
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_item_length": "240 mm",
+        "max_contains_volume": "750 ml",
+        "max_contains_weight": "2 kg",
+		"weight_multiplier":0.3,
+        "moves": 40,
+        "flag_restriction": [ "MAG_COMPACT" ]
+      }
+    ],
+    "armor": [
+      {
+        "material": [
+          { "type": "nylon", "covered_by_mat": 100, "thickness": 3.0 },
+          { "type": "kevlar_layered", "covered_by_mat": 95, "thickness": 4.0,"ignore_sheet_thickness":true }
+        ],
+        "encumbrance": [ 4, 4 ],
+        "coverage": 100,
+        "cover_vitals": 100,
+        "covers": [ "torso" ]
+      }
+    ],
+    "use_action": [ { "type": "attach_molle", "size": 8 }, { "type": "detach_molle" } ]
+  },
+  {
+    "id": "shd_gloves",
+    "repairs_like": "gloves_survivor",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "特工手套"},
+    "description": "一对国土战略局分发的标准手套，能够保暖提升武器抓握力以及提供一定的防御。",
+    "weight": "220 g",
+    "volume": "500 ml",
+    "price": 5200,
+    "price_postapoc": 1500,
+    "to_hit": 2,
+    "material": [ "kevlar", "leather" ],
+    "symbol": "[",
+    "looks_like": "fire_gauntlets",
+    "color": "dark_gray",
+    "warmth": 30,
+    "material_thickness": 5,
+    "environmental_protection": 5,
+    "flags": [ "VARSIZE", "STURDY" ],
+    "armor": [ { "encumbrance": 5, "coverage": 100, "covers": [ "hand_l", "hand_r" ] } ]
+  },
+  {
+    "id": "shd_boots",
+    "repairs_like": "boots_survivor",
+    "type": "ARMOR",
+    "category": "armor",
+    "looks_like":"boots_combat",
+    "name": { "str": "国土战略局战斗靴" },
+    "description": "一双国土战略局分发的标准战斗靴，能让穿戴者有着更好的抓地力和脚裸稳定性，不仅非常耐用而已还针对一些特殊情况增加了一些材料。",
+    "weight": "1060 g",
+    "volume": "2 L",
+    "price": 7000,
+    "price_postapoc": 1500,
+    "to_hit": -1,
+    "bashing": 1,
+    "material": [ "kevlar", "leather", "rubber" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    
+    "warmth": 30,
+    "material_thickness": 5,
+    "environmental_protection": 15,
+    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ],
+    "armor": [ { "encumbrance": 25, "coverage": 100, "covers": [ "foot_l", "foot_r" ] } ]
+  },
+  {
+    "id": "shd_mask",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "国土战略局过滤面具" },
+    "description": "一个国土战略局分发的过滤面具，能够很好的过滤有毒气体让特工得以在CBRN环境下保持正常战斗能力。",
+    "flags": [ "SLEEP_IGNORE" ],
+    "weight": "260 g",
+    "volume": "500 ml",
+    "price": 3500,
+    "price_postapoc": 250,
+    "to_hit": 1,
+    "material": [ "plastic" ],
+    "symbol": "[",
+    "looks_like": "mask_dust",
+    "color": "light_gray",
+    "warmth": 10,
+    "material_thickness": 2,
+    "environmental_protection": 10,
+    "environmental_protection_with_filter": 17,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "gasfilter_s": 100 } } ],
+    "ammo": "gasfilter_s",
+    "use_action": [ "GASMASK" ],
+    "armor": [ { "encumbrance": 20, "coverage": 100, "covers": [ "mouth" ] } ]
+  },
+  {
+    "id": "404_weapon",
+    "type": "ARMOR",
+    "name": {
+      "str": "獠牙的徽章"
+    },
+    "description": "叛变特工獠牙给你的徽章，上面图案看起来像是个0和两个相反方向的4合在一起。“those who no exise”",
+    "weight": "60 g",
+    "volume": "5 ml",
+    "price": "50 USD",
+    "price_postapoc": "5 USD",
+    "phase": "solid",
+    "material": [
+      "silver"
+    ],
+    "symbol": "[",
+    "looks_like": "badge_cybercop",
+    "color": "black"
+  },
+  {
+    "id": "shd_armor_shield",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": {"str": "防弹护盾"},
+    "description": "国土战略局影子技术部门所开发的轻型防弹护盾，被用于为特工们提供更好的防护，但因为需要兼顾机动性和便携性所以只能抵挡手枪弹等子弹。请注意，装备着此装备时移动速度会大幅减少",
+    "relic_data": {
+        "passive_effects": [
+            {
+                "has": "WORN",
+                "condition": "ALWAYS",
+                "values": [
+                    {
+                        "value": "ARMOR_CUT",
+                        "add": -20
+                    },
+                    {
+                        "value": "ARMOR_BASH",
+                        "add": -25
+                    },
+                    {
+                        "value": "ARMOR_STAB",
+                        "add": -20
+                    },
+                    {
+                        "value": "ARMOR_BULLET",
+                        "add": -25
+                    },
+                    {
+                        "value": "SPEED",
+                        "add": -50
+                    }
+                ]
+            }
+        ]
+    },
+    "weight": 3425,
+    "volume": 1,
+    "price": 3500,
+    "to_hit": 2,
+    "material": ["plastic"],
+    "symbol": "[",
+    "color": "dark_gray",
+    "material_thickness": 2,
+    "flags": [
+        "OVERSIZE",
+        "RESTRICT_HANDS",
+        "ALLOWS_NATURAL_ATTACKS",
+        "BLOCK_WHILE_WORN"
+    ],
+    "armor": [
+        {
+            "covers": [
+                "arm_l",
+                "arm_r",
+                "hand_l",
+                "hand_r"
+            ],
+            "encumbrance": 40
+        }
+    ]
+},
+{
+"//":"废弃",
+    "id": "cross_army_shield",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": {"str": "十字军防弹盾牌"},
+    "description": "国土战略局影子技术部门所开发防弹护盾的变种之一，这种防弹护盾能够让使用者在装备防弹盾牌的同时使用中型武器，但是代价是削弱了防护力。",
+    "relic_data": {
+        "passive_effects": [
+            {
+                "has": "WORN",
+                "condition": "ALWAYS",
+                "values": [
+                    {
+                        "value": "ARMOR_CUT",
+                        "add": -15
+                    },
+                    {
+                        "value": "ARMOR_BASH",
+                        "add": -18
+                    },
+                    {
+                        "value": "ARMOR_STAB",
+                        "add": -15
+                    },
+                    {
+                        "value": "ARMOR_BULLET",
+                        "add": -19
+                    },
+                    {
+                        "value": "SPEED",
+                        "add": -40
+                    }
+                ]
+            }
+        ]
+    },
+    "weight": 3425,
+    "volume": 1,
+    "price": 3500,
+    "to_hit": 2,
+    "material": ["plastic"],
+    "symbol": "[",
+    "color": "dark_gray",
+    "material_thickness": 2,
+    "flags": [
+        "OVERSIZE",
+        "RESTRICT_HANDS",
+        "ALLOWS_NATURAL_ATTACKS",
+        "BLOCK_WHILE_WORN"
+    ],
+    "armor": [
+    { "covers": [ "hand_l","hand_r" ], "encumbrance": [ 30,30 ] },
+      { "covers": [ "arm_l", "arm_r" ], "encumbrance": [ 10, 10 ] }
+    ]
+}
+]

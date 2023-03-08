@@ -1,0 +1,293 @@
+[
+{
+    "type": "npc_class",
+    "id": "rouge_agent_hk416",
+    "name": {
+      "str": "叛变特工獠牙"
+    },
+    "job_description": "Protects the town from assailants",
+    "common": false,
+    "bonus_str": {
+      "rng": [
+        6,
+        6
+      ]
+    },
+    "bonus_dex": {
+      "rng": [
+        4,
+        4
+      ]
+    },
+    "bonus_int": {
+      "rng": [
+        4,
+        4
+      ]
+    },
+    "bonus_per": {
+      "rng": [
+        4,
+        4
+      ]
+    },
+    "worn_override": "rouge_agent_worn",
+    "carry_override": "rouge_agent_carry",
+    "weapon_override": "rouge_agent_weapon",
+    "skills": [
+      {
+        "skill": "computer",
+        "level": {
+          "rng": [
+            6,
+            6
+          ]
+        }
+      },
+      {
+        "skill": "traps",
+        "level": {
+          "rng": [
+            5,
+            5
+          ]
+        }
+      },
+      {
+        "skill": "driving",
+        "level": {
+          "rng": [
+            5,
+            5
+          ]
+        }
+      },
+      {
+        "skill": "fabrication",
+        "level": {
+          "rng": [
+            5,
+            5
+          ]
+        }
+      },
+      {
+        "skill": "firstaid",
+        "level": {
+          "rng": [
+            5,
+            5
+          ]
+        }
+      },
+      {
+        "skill": "survival",
+        "level": {
+          "rng": [
+            5,
+            5
+          ]
+        }
+      },
+      {
+        "skill": "swimming",
+        "level": {
+          "rng": [
+            5,
+            5
+          ]
+        }
+      },
+      {
+        "skill": "archery",
+        "level": {
+          "rng": [
+            3,
+            3
+          ]
+        }
+      },
+      {
+        "skill": "bashing",
+        "level": {
+          "rng": [
+            4,
+            4
+          ]
+        }
+      },
+      {
+        "skill": "cutting",
+        "level": {
+          "rng": [
+            5,
+            5
+          ]
+        }
+      },
+      {
+        "skill": "dodge",
+        "level": {
+          "rng": [
+            6,
+            6
+          ]
+        }
+      },
+      {
+        "skill": "gun",
+        "level": {
+          "rng": [
+            8,
+            8
+          ]
+        }
+      },
+      {
+        "skill": "launcher",
+        "level": {
+          "rng": [
+            5,
+            5
+          ]
+        }
+      },
+      {
+        "skill": "melee",
+        "level": {
+          "rng": [
+            5,
+            5
+          ]
+        }
+      },
+      {
+        "skill": "stabbing",
+        "level": {
+          "rng": [
+            5,
+            5
+          ]
+        }
+      },
+      {
+        "skill": "throw",
+        "level": {
+          "rng": [
+            5,
+            5
+          ]
+        }
+      },
+      {
+        "skill": "unarmed",
+        "level": {
+          "rng": [
+            6,
+            6
+          ]
+        }
+      },
+      {
+        "skill": "pistol",
+        "level": {
+          "rng": [
+            7,
+            7
+          ]
+        }
+      },
+      {
+        "skill": "rifle",
+        "level": {
+          "rng": [
+            8,
+            8
+          ]
+        }
+      },
+      {
+        "skill": "shotgun",
+        "level": {
+          "rng": [
+            6,
+            6
+          ]
+        }
+      },
+      {
+        "skill": "smg",
+        "level": {
+          "rng": [
+            6,
+            6
+          ]
+        }
+      }
+    ],
+    "traits": [
+      [
+        "SKIN_LIGHT",
+        100
+      ]
+    ],
+    "bionics": [
+      {
+        "id": "bio_metabolics",
+        "chance": 100
+      },
+      {
+        "id": "bio_power_storage_mkII",
+        "chance": 100
+      },
+      {
+        "id": "bio_power_storage_mkII",
+        "chance": 100
+      },
+      {
+        "id": "bio_power_storage_mkII",
+        "chance": 100
+      },
+      {
+        "id": "bio_power_storage_mkII",
+        "chance": 100
+      },
+      {
+        "id": "bio_str_enhancer",
+        "chance": 100
+      },
+      {
+        "id": "bio_carbon",
+        "chance": 100
+      },
+      {
+        "id": "bio_nanobots",
+        "chance": 100
+      },
+      {
+        "id": "bio_armor_head",
+        "chance": 100
+      },
+      {
+        "id": "bio_armor_arms",
+        "chance": 100
+      },
+      {
+        "id": "bio_armor_legs",
+        "chance": 100
+      },
+      {
+        "id": "bio_armor_torso",
+        "chance": 100
+      },
+      {
+        "id": "bio_ups",
+        "chance": 100
+      },
+      {
+        "id": "bio_purifier",
+        "chance": 100
+      }
+    ]
+  }
+  ]

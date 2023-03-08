@@ -1,0 +1,16 @@
+[
+{
+    "type": "item_group",
+    "id": "russia_gun",
+    "subtype": "collection",
+    "entries": [
+    { "item": "aksemi", "prob":80 },
+    { "item": "ak74", "prob":50 },
+    { "item": "ak47", "prob":50 },
+    { "item": "mk47", "prob":40 },
+    { "item": "mosin91_30", "prob":20 },
+    { "item": "mosin91_30_ebr", "prob":10 },
+    { "item": "sv98", "prob":5 }
+    ]
+    }
+    ]

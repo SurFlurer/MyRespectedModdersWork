@@ -1,0 +1,120 @@
+[{
+    "id": "shd_medical_bag",
+    "type": "SPELL",
+    "name": {
+      "str": "国土战略局医疗包治疗"
+    },
+    "description": "来自国土战略局魔法般的先进技术",
+    "message": "你使用了国土战略局的医疗包，伤口愈合了！",
+    "valid_targets": [
+      "self",
+      "ally"
+    ],
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ],
+    "effect_str": "herb_cleanse",
+    "min_damage": -25,
+    "max_damage": -25,
+    "effect": "attack",
+    "shape": "blast",
+    "extra_effects": [
+      {
+        "id": "shd_jianqingtengku",
+        "hit_self": true
+      }
+    ],
+    "min_duration": 1,
+    "max_duration": 1
+  },
+  {
+    "id": "shd_jianqingtengku",
+    "type": "SPELL",
+    "name": {
+      "str": "减轻疼痛"
+    },
+    "description": "医疗包的药物解除你的痛苦！",
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS"
+    ],
+    "valid_targets": [
+      "self"
+    ],
+    "min_damage": 45,
+    "max_damage": 45,
+    "effect": "recover_energy",
+    "shape": "blast",
+    "effect_str": "PAIN",
+    "min_duration": 1,
+    "max_duration": 1
+  },
+  {
+    "id": "SHD_naizhen",
+    "type": "SPELL",
+    "name": {
+      "str": "国土战略局医疗针治疗"
+    },
+    "description": "来自国土战略局魔法般的先进技术",
+    "message": "你使用了国土战略局的治疗针，伤口愈合了！",
+    "valid_targets": [
+      "self",
+      "ally"
+    ],
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ],
+    "effect_str": "herb_cleanse",
+    "min_damage": -20,
+    "max_damage": -20,
+    "effect": "attack",
+    "shape": "blast",
+    "extra_effects": [
+      {
+        "id": "shd_jianqingtengku",
+        "hit_self": true
+      }
+    ],
+    "min_duration": 1,
+    "max_duration": 1
+  },
+  {
+    "id": "SHD_qianghuazhen",
+    "type": "SPELL",
+    "name": {
+      "str": "国土战略局强化针治疗"
+    },
+    "description": "来自国土战略局魔法般的先进技术",
+    "message": "你使用了国土战略局的强化针，伤口愈合的同时力量涌现上来了！",
+    "valid_targets": [
+      "self",
+      "ally"
+    ],
+    "flags": [
+      "SILENT",
+      "NO_HANDS",
+      "NO_LEGS",
+      "NO_PROJECTILE"
+    ],
+    "effect_str": "herb_cleanse",
+    "min_damage": -15,
+    "max_damage": -15,
+    "effect": "attack",
+    "shape": "blast",
+    "extra_effects": [
+      {
+        "id": "shd_jianqingtengku",
+        "hit_self": true
+      }
+    ],
+    "min_duration": 1,
+    "max_duration": 1
+  }
+  ]

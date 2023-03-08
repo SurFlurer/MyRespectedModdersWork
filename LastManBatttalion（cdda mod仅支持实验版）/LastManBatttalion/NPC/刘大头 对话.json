@@ -1,0 +1,220 @@
+[
+{
+    "id": "TALK_shd_agent",
+    "type": "talk_topic",
+    "dynamic_line": "你好，幸存者，欢迎来到我们的据点。这里十分安全，物资充足，空位也很多。我也不介意你把这当成个落脚点。",
+    "responses": [
+      {
+        "text": "这是哪？",
+        "topic": "TALK_shd_agent_A"
+      },
+      {
+        "text": "你是谁？",
+        "topic": "TALK_shd_agent_B"
+      },
+      {
+        "text": "这里的情况怎么样？",
+        "topic": "TALK_shd_agent_C"
+      },
+      {
+        "text": "外面那些守卫是什么人？",
+        "topic": "TALK_shd_agent_D"
+      },
+      {
+        "text": "有什么我可以帮忙的吗？",
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "我要先走了",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_shd_agent_A",
+    "type": "talk_topic",
+    "dynamic_line": "如你所见，这是一个军事掩体。不过现在这里已经启用来保护难民了。",
+    "responses": [
+      {
+        "text": "你是谁?",
+        "topic": "TALK_shd_agent_B"
+      },
+      {
+        "text": "好吧。",
+        "topic": "TALK_shd_agent"
+      }
+    ]
+  },
+  {
+    "id": "TALK_shd_agent_B",
+    "type": "talk_topic",
+    "dynamic_line": "我是这片地区的国土战略局调度员，现在和一名JTF的军官一起管理这个据点。",
+    "responses": [
+      {
+        "text": "国土战略局?",
+        "topic": "TALK_shd_agent_B1"
+      },
+      {
+        "text": "JTF?",
+        "topic": "TALK_shd_agent_D"
+      }
+    ]
+  },
+  {
+    "id": "TALK_shd_agent_B1",
+    "type": "talk_topic",
+    "dynamic_line": "国土战略局是个由联邦政府直接管理的秘密机构，我们在人群中潜藏着大量没有沉睡特工，目的是在发生灾难时能够拯救现存的一切....包括现在。",
+    "responses": [
+      {
+        "text": "有点意思。",
+        "topic": "TALK_shd_agent"
+      }
+    ]
+  },
+  {
+    "id": "TALK_shd_agent_C",
+    "type": "talk_topic",
+    "dynamic_line": "我认为这里比外面大多数地方都要安全。充足的物资，坚固的建筑和JTF士兵都让这个地方充满了乐观的氛围。",
+    "responses": [
+      {
+        "text": "看起来也很乐观。",
+        "topic": "TALK_shd_agent"
+      }
+    ]
+  },
+  {
+    "id": "TALK_shd_agent_D",
+    "type": "talk_topic",
+    "dynamic_line": "联合作战特遣队，他们是在大灾变初期由一些部门为了组织力量和统一指挥而让残存的政府人员组成的队伍。",
+    "responses": [
+      {
+        "text": "那么他们具体都是什么人?",
+        "topic": "TALK_shd_agent_D1"
+      }
+    ]
+  },
+  {
+    "id": "TALK_shd_agent_D1",
+    "type": "talk_topic",
+    "dynamic_line": "JTF的组成人员从警察、消防员、CERA的工作人员到国民兵和正规部队都有，就人员素质而言他们是参差不齐。但是他们都是愿意坚守岗位的人员，而不像一些人自成一派占山为王。",
+    "responses": [
+      {
+        "text": "不管如何，都比外面的那些人强...",
+        "topic": "TALK_shd_agent"
+      }
+    ]
+  },
+  {
+    "id": "MISSION_shd_agent",
+    "type": "mission_definition",
+    "name": {
+      "str": "调查坠机地点"
+    },
+    "description": "一架直升机坠落在当地，你需要调查那里并把猎人手表带回。",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 5,
+    "value": 50000,
+    "item": "agent_hunter_line",
+    "end": {
+      "effect": [
+        {
+              "u_sell_item": "agent_hunter_line",
+              "count": 1
+        },
+        {
+              "npc_consume_item": "agent_hunter_line",
+              "count": 1
+        },
+        {
+          "u_spawn_item": "Phoenix",
+          "count": 150
+        }
+      ]
+    },
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "field",
+        "reveal_radius": 50,
+        "random": true,
+        "search_range": 50,
+		"z":0
+      },
+      "update_mapgen": {
+        "rows": [
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        "
+        ],
+         "place_monster": [ {
+            "monster": "LMB_Rifleman",
+            "x": 5,
+            "y": 5
+          },
+          {
+            "monster": "LMB_Rifleman",
+            "x": 21,
+            "y": 3
+          },
+          {
+            "monster": "MISSION_agent_hunter",
+            "x": 8,
+            "y": 21
+          },
+          {
+            "monster": "Rouge_agent",
+            "x": 3,
+            "y":16
+          },
+          {
+            "monster": "Rouge_agent",
+            "x": 18,
+            "y": 13
+          } ],
+          "place_vehicles": [
+        {
+          "vehicle": "helicopter_blackhawk_3a",
+          "x": 11,
+          "y": 12,
+          "fuel": 60,
+          "chance": 100,
+          "status": -1,
+          "rotation": 50
+        }
+      ]
+            }
+    },
+    "origins": ["ORIGIN_SECONDARY"],
+    "dialogue": {
+      "describe": "我刚好接到个任务，你有兴趣吗?",
+      "offer": "情况是这样，我们收到通讯说一架来自其他据点的直升机因为不明原因坠落在附近，他们希望我们可以去调查一下那里的情况并取回他们的东西。",
+      "accepted": "当你调查完成后，我会派遣士兵过去取回他们需要的东西的。",
+      "rejected": "我会让其他人去解决这个问题的。",
+      "advice": "请小心，如果幸存者军队的士兵知道这个事情他们也会去搜刮物资的，你可能需要准备好和他们交火。",
+      "inquire": "调查进度怎么样？",
+      "success": "令人震惊的调查报告。不过你还是顺利完成任务了，真令人惊讶你的本事。",
+      "success_lie": "希望你没在开玩笑，我的人手刚刚过去了",
+      "failure": "没事的，我会再找其他人来解决这个任务。"
+    }
+  }
+  ]

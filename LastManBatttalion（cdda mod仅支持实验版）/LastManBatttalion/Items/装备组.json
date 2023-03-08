@@ -1,0 +1,224 @@
+[
+{
+    "id": "lone_star_pack",
+    "repairs_like": "bigback",
+    "type": "ARMOR",
+    "name": { "str": "孤星背包" },
+    "description": "这个背包属于国土战略局的定制装备，针对那些需要携带大量装备的特工所设计。“也许你可以帮我把他包回去，当然我指的是他的尸体。-不知名第一波特工”",
+    "weight": "1300 g",
+    "volume": "5000 ml",
+    "price": 6700,
+    "price_postapoc": 1500,
+    "material": [ "nylon", "plastic" ],
+    "symbol": "[",
+    "looks_like": "backpack",
+    "color": "green",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "80 L",
+        "max_contains_weight": "70 kg",
+        "max_item_length": "90 cm",
+        "magazine_well": "3 L",
+        "weight_multiplier":0.75,
+        "moves": 300
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "10 L",
+        "max_contains_weight": "20 kg",
+        "max_item_length": "60 cm",
+        "magazine_well": "750 ml",
+        "weight_multiplier":0.75,
+        "moves": 200
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "10 L",
+        "max_contains_weight": "20 kg",
+        "max_item_length": "60 cm",
+        "magazine_well": "750 ml",
+        "weight_multiplier":0.75,
+        "moves": 200
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "4 L",
+        "max_contains_weight": "8 kg",
+        "max_item_length": "20 cm",
+        "magazine_well": "500 ml",
+        "weight_multiplier":0.6,
+        "moves": 150
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "4 L",
+        "max_contains_weight": "8 kg",
+        "max_item_length": "20 cm",
+        "magazine_well": "500 ml",
+        "weight_multiplier":0.6,
+        "moves": 150
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "watertight": true,
+        "max_contains_volume": "6000 ml",
+        "max_item_volume": "32 ml",
+        "max_contains_weight": "20 kg"
+      },
+      {
+        "//": "carabiner pocket",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "6 L",
+        "max_contains_weight": "10 kg",
+        "max_item_length": "150 cm",
+        "min_item_length": "20 cm",
+        "moves": 150,
+        "extra_encumbrance": 2,
+        "ripoff": 2,
+        "description": "Attached with a carabiner or strap.",
+        "activity_noise": { "volume": 2, "chance": 5 }
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_item_length": "300 mm",
+        "max_contains_volume": "4 L",
+        "max_contains_weight": "8 kg",
+        "moves": 200,
+        "flag_restriction": [ "MAG_COMPACT", "MAG_BULKY" ],
+        "volume_encumber_modifier": 0.3
+      },
+      {
+        "//": "carabiner pocket",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "6 L",
+        "max_contains_weight": "10 kg",
+        "max_item_length": "150 cm",
+        "min_item_length": "20 cm",
+        "moves": 150,
+        "extra_encumbrance": 2,
+        "ripoff": 2,
+        "description": "Attached with a carabiner or strap.",
+        "activity_noise": { "volume": 2, "chance": 5 }
+      }
+    ],
+    "warmth": 10,
+    "material_thickness": 2,
+    "flags": [ "BELTED", "WATER_FRIENDLY","TARDIS" ],
+    "use_action": [ { "type": "attach_molle", "size": 6 }, { "type": "detach_molle" } ],
+    "armor": [ { "encumbrance": [ 10, 50 ], "coverage": 70, "covers": [ "torso" ], "specifically_covers": [ "torso_hanging_back" ] } ]
+  },
+  {
+    "id": "glasses_bal_agent",
+    "repairs_like": "survivor_goggles",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "“开拓者”护目镜"},
+    "description": "一对来自SHD的护目镜，在有着不错的防护的同时没有任何累赘，并且能够满足来自电焊,闪光弹等强光对使用者的干扰。",
+    "weight": "184 g",
+    "volume": "250 ml",
+    "price": 7500,
+    "price_postapoc": 500,
+    "to_hit": -2,
+    "material": [ "plastic", "nylon" ],
+    "symbol": "[",
+    "looks_like": "glasses_safety",
+    "color": "dark_gray",
+    "warmth": 5,
+    "material_thickness": 3,
+    "environmental_protection": 4,
+     "qualities": [ [ "GLARE", 3 ] ],
+    "flags": [ "WATER_FRIENDLY", "SUN_GLASSES", "SKINTIGHT" ],
+    "armor": [ { "encumbrance": 0, "coverage": 100, "covers": [ "eyes" ], "rigid_layer_only": true } ]
+  },
+  {
+    "id": "mourning_pack",
+    "repairs_like": "bigback",
+    "type": "ARMOR",
+    "name": { "str": "“追悼”背包" },
+    "description": "一个黑色的背包",
+    "weight": "1450 g",
+    "volume": "6 L",
+    "price": 6700,
+    "price_postapoc": 1500,
+    "material": [ "nylon", "plastic" ],
+    "symbol": "[",
+    "looks_like": "backpack",
+    "color": "green",
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "30 L",
+        "max_contains_weight": "50 kg",
+        "max_item_length": "50 cm",
+        "magazine_well": "5 L",
+        "moves": 300
+      },
+      {
+        "//": "hydration pouch storage",
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "3001 ml",
+        "max_contains_weight": "4 kg",
+        "max_item_length": "30 cm",
+        "moves": 500,
+        "description": "Pouch sized for a hydration pack."
+      },
+      {
+        "//": "carabiner pocket",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "6 kg",
+        "max_item_length": "120 cm",
+        "min_item_length": "20 cm",
+        "moves": 150,
+        "extra_encumbrance": 3,
+        "ripoff": 2,
+        "description": "Attached with a carabiner or strap.",
+        "activity_noise": { "volume": 8, "chance": 10 }
+      },
+      {
+        "//": "carabiner pocket",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "6 kg",
+        "max_item_length": "120 cm",
+        "min_item_length": "20 cm",
+        "moves": 150,
+        "extra_encumbrance": 3,
+        "ripoff": 2,
+        "description": "Attached with a carabiner or strap.",
+        "activity_noise": { "volume": 8, "chance": 10 }
+      },
+      {
+        "//": "tucked against back",
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "max_contains_volume": "5 L",
+        "max_contains_weight": "4 kg",
+        "max_item_length": "150 cm",
+        "min_item_length": "60 cm",
+        "moves": 200,
+        "extra_encumbrance": 10,
+        "description": "Tucked between your back and the backpack.",
+        "ripoff": 3
+      }
+    ],
+    "warmth": 10,
+    "material_thickness": 2,
+    "flags": [ "BELTED", "WATER_FRIENDLY" ],
+    "use_action": [ { "type": "attach_molle", "size": 12 }, { "type": "detach_molle" } ],
+    "armor": [
+      {
+        "encumbrance": 5,
+        "volume_encumber_modifier": 0.15,
+        "coverage": 70,
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_hanging_back" ]
+      }
+    ]
+  }
+]

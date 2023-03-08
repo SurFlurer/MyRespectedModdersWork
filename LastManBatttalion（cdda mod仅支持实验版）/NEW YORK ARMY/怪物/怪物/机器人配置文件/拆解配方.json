@@ -1,0 +1,91 @@
+[
+{
+    "result": "broken_miniuav",
+    "type": "uncraft",
+    "activity_level": "LIGHT_EXERCISE",
+    "obsolete": false,
+    "skill_used": "electronics",
+    "difficulty": 3,
+    "time": "2 h",
+    "using": [
+      [
+        "soldering_standard",
+        25
+      ]
+    ],
+    "qualities": [
+      {
+        "id": "SCREW",
+        "level": 1
+      }
+    ],
+    "components": [
+      [
+        [
+          "ai_module",
+          1
+        ]
+      ],
+      [
+        [
+          "gun_module",
+          1
+        ]
+      ],
+      [
+        [
+          "targeting_module",
+          1
+        ]
+      ],
+      [
+        [
+          "identification_module",
+          1
+        ]
+      ],
+      [
+        [
+          "sensor_module",
+          1
+        ]
+      ],
+      [
+        [
+          "m4_carbine",
+          1
+        ]
+      ],
+      [
+        [
+          "m203",
+          4
+        ]
+      ],
+      [
+        [
+          "medium_storage_battery",
+          1
+        ]
+      ],
+      [
+        [
+          "power_supply",
+          1
+        ]
+      ],
+      [
+        [
+          "robot_controls",
+          1
+        ]
+      ],
+      [
+        [
+          "turret_chassis",
+          1
+        ]
+      ]
+    ]
+  }
+]

@@ -1,0 +1,60 @@
+[
+{
+	"id":"LMB_new_Rifleman",
+	"type":"MONSTER",
+	"name":{"str":"巡逻步兵"},
+	"looks_like": "mon_zombie_soldier",
+	"description":"这名幸存者军队的士兵似乎曾经是一名国民警卫队的士兵，或是加入了幸存者军队后受过训练的平民。不管如何，他手上的p416仍然致命。",
+	"default_faction":"military",
+	"species":["HUMAN"],
+	"diff":30,
+	"volume":"75000ml",
+	"weight":"81500g",
+	"hp":120,
+	"speed":80,
+	"material":["flesh"],
+	"symbol":"@",
+	"color":"white",
+	"aggression":45,
+	"morale":100,
+	"melee_skill":3,
+	"melee_dice":4,
+	"melee_dice_sides":4,
+	"melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
+	"dodge":1,
+	"armor_bash":23,
+	"armor_cut":25,
+	"armor_bullet":25,
+	"vision_day":36,
+	"vision_night":4,
+	"path_settings": {"max_dist": 15},
+	"starting_ammo":{"556":200},
+	"special_attacks":[
+	{
+		"type":"gun",
+		"cooldown":6,
+		"gun_type":"p416",
+		"ammo_type":"556",
+		"fake_skills":[["gun",4],["rifle",4]],
+		"ranges":[[2,3,"AUTO"],[4,20,"DEFAULT"]],
+            "require_targeting_player": true,
+            "require_targeting_npc": true,
+            "require_targeting_monster": true,
+            "targeting_cost": 150
+	}
+	],
+	"death_drops":"last_man_battletion_new_rifleman",
+	"harvest":"zombie",
+	"flags":[
+	"SEES",
+	"HEARS",
+	"SMELLS",
+	"WARM",
+	"CLIMBS",
+	"PATH_AVOID_DANGER_1",
+	"CAN_OPEN_DOORS",
+	"PRIORITIZE_TARGETS",
+	"PLASTIC"
+ ]
+}
+]

@@ -1,0 +1,63 @@
+[
+{
+    "id": "lmb_rifle_vest",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+		"item":"heavy_load_bearing_vest",
+		"contents-group":"lmb_vset_group"
+	}
+          ]
+},
+{
+    "id": "lmb_vset_group",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+          {
+		"item":"radio_pouch",
+		"contents-item":"two_way_radio",
+		"charges":[1,100]
+	},
+	{
+		"item":"triple_stacker_pouch",
+		"contents-group":"lmb_ar_ammo_885a1"
+	},
+	{
+		"item":"gadget_pouch",
+		"contents-group":"lmb_rifleman_grenade"
+	}
+          ]
+},
+{
+    "id": "lmb_ar_ammo_885a1",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+		"item":"stanag30",
+		"ammo-item":"556_m855a1",
+		"charges":[20,30],
+		"count":[3,5]
+          }
+          ]
+},
+{
+    "id": "lmb_rifleman_grenade",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+		"item":"flashbang",
+		"prob":50,
+		"count":[1,3]
+	},
+	{
+		"item":"grenade_inc",
+		"prob":50,
+		"count":[1,3]
+	}
+          ]
+}
+]

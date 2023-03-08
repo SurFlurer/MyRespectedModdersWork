@@ -1,0 +1,65 @@
+[
+{
+	"type":"item_group",
+	"id":"SHD_equipment",
+	"subtype":"distribution",
+	"magazine": 100,
+	"ammo": 60,
+	"entries":[
+	{"item":"first_wave_TDI","prob":50},
+	{"item":"first_wave_m1a","prob":50},
+	{"item":"lone_star_pack","prob":10},
+	{"item":"socom_mk20","prob":20},
+	{"item":"akm_merciless","prob":15}
+	]
+},
+{
+	"type":"item_group",
+	"id":"military",
+	"copy-from":"military",
+	"magazine": 100,
+	"ammo": 60,
+	"extend":{
+	"items":[
+	["hk416d",10],
+	["hkmg4",10],
+	["sv98",10],
+	["sv98mag",20],
+	["srs",10],
+	["srsmag",20],
+	["hk416_only",10],
+	["sat8",10]
+	]}
+},
+{
+	"type":"item_group",
+	"id":"mil_hw",
+	"copy-from":"mil_hw",
+	"magazine": 100,
+	"ammo": 60,
+	"extend":{
+	"items":[
+	["hk416d",10],
+	["hkmg4",10],
+	["sv98",10],
+	["sv98mag",20],
+	["srs",10],
+	["srsmag",20],
+	["hk416_only",10],
+	["sat8",10]
+	]}
+	},
+{
+	"type":"item_group",
+	"id":"LMB_military_gun",
+	"items":[
+	{"item":"m27_assault_rifle"},
+	{"item":"mgl"},
+	{"item":"hk_mp5"},
+    {"item":"saiga_12"},
+    {"item":"m110a1"},
+	{"item":"remington_870_express"},
+	{"item":"steyr_aug"}
+]
+}
+]

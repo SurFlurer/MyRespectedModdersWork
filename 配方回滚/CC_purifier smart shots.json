@@ -1,0 +1,116 @@
+[
+{
+    "type": "recipe",
+    "activity_level": "fake",
+    "result": "purifier_smart_shot",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+        "skill_used": "chemistry",
+    "skills_required": [
+        "firstaid",
+        8
+    ],
+    "difficulty": 10,
+    "time": "4320000s",
+    "tools": [ [ [ "surface_heat", 500, "LIST" ] ] ],
+    "book_learn": [ [ "recipe_alpha", 9 ], [ "recipe_serum", 9 ] ],
+    "qualities": [ { "id": "CHEM", "level": 3 } ],
+    "components": [ [ [ "iv_purifier", 5 ] ], [ [ "royal_jelly", 1 ] ], [ [ "slime_scrap", 33 ] ], [ [ "syringe", 1 ] ] ]
+  },
+    {
+    "type": "GENERIC",
+    "id": "afs_hauling_space",
+    "name": { "str": "牵引货仓" },
+    "description": "一个巨大的钢结构金属空间,与载具车顶的延伸部分连在一起,其内部巨大容量可以装载大量货物.",
+    "weight": "240 kg",
+    "to_hit": -6,
+    "color": "cyan",
+    "symbol": "]",
+    "looks_like": "cargo_aisle",
+    "material": [ "steel" ],
+    "volume": "100 L",
+    "bashing": 2,
+    "category": "veh_parts",
+    "price": 50000
+  },
+    {
+    "type": "vehicle_part",
+    "id": "afs_hauling_space",
+    "copy-from": "cargo_space",
+    "name": { "str": "hauling space" },
+    "looks_like": "cargo_space",
+    "item": "afs_hauling_space",
+    "location": "center",
+    "durability": 300,
+    "description": "A huge, empty space used in truck trailers to transport vast quantities of stuff.",
+    "size": 6000,
+    "breaks_into": [ { "item": "steel_lump", "count": [ 12, 18 ] }, { "item": "scrap", "count": [ 12, 18 ] } ],
+    "flags": [ "AISLE", "BOARDABLE", "CARGO", "ROOF" ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "MODERATE_EXERCISE",
+    "result": "afs_hauling_space",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_PARTS",
+    "skill_used": "fabrication",
+    "skills_required": [ "mechanics", 1 ],
+    "difficulty": 5,
+    "time": "6 h",
+    "reversible": true,
+    "autolearn": true,
+    "using": [ [ "welding_standard", 10 ] ],
+    "proficiencies": [
+      { "proficiency": "prof_metalworking" },
+      { "proficiency": "prof_welding_basic", "fail_multiplier": 2.5 },
+      { "proficiency": "prof_welding" }
+    ],
+    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "SAW_M", "level": 2 }, { "id": "WRENCH", "level": 2 } ],
+    "components": [ [ [ "hdframe", 3 ] ], [ [ "sheet_metal", 4 ] ] ]
+  },
+      {
+        "type": "terrain",
+        "id": "t_trashpit",
+        "name": "填埋坑",
+        "description": "一个深不见底的洞，底部传来的幽幽的水声，貌似连接到了一条地下暗河，扔下去的垃圾都会被暗河冲走。你在稍深处加装了一些铁丝网，免得你不小心摔到暗河里去。不过这个高度还是能把你摔得七荤八素，所以丢垃圾时得小心一点。",
+        "symbol": "0",
+        "color": "brown",
+        "connects_to": "PIT_DEEP",
+        "move_cost": 10,
+        "trap": "tr_pit",
+        "flags": [ "TRANSPARENT", "DESTROY_ITEM" ],
+        "bash": { "sound": "thump", "ter_set": "t_null", "str_min": 40, "str_max": 100, "str_min_supported": 100, "bash_below": true }
+    },{
+        "type": "construction_group",
+        "id": "dig_a_deep_trashpit",
+        "name": "挖填埋坑"
+      },{
+        "type": "construction_group",
+        "id": "fill_trashpit_with_dirt",
+        "name": "用泥土填填埋坑"
+      },{
+        "type": "construction",
+        "id": "constr_trashpit",
+        "skill": "survival",
+        "group": "dig_a_deep_trashpit",
+        "category": "CONSTRUCT",
+        "difficulty": 1,
+        "time": "150m",
+        "on_display": true,
+        "qualities": [ { "id": "DIG", "level": 2 } ],
+        "pre_flags": [ "DIGGABLE", "FLAT" ],
+        "post_terrain": "t_trashpit"
+      },{
+        "type": "construction",
+        "id": "constr_fill_trashpit",
+        "group": "fill_trashpit_with_dirt",
+        "category": "CONSTRUCT",
+        "required_skills": [ [ "fabrication", 0 ] ],
+        "time": "40 m",
+        "qualities": [ [ { "id": "DIG", "level": 1 } ] ],
+        "components": [ [ [ "material_soil", 200 ] ] ],
+        "dark_craftable": true,
+        "pre_terrain": "t_trashpit",
+        "post_terrain": "t_dirt"
+      }
+]

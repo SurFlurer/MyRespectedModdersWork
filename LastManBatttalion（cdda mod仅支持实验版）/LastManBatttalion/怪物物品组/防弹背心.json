@@ -1,0 +1,60 @@
+[
+{
+    "id": "lmb_ballistic_vest_3",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [{
+        "distribution": [{
+		"item":"ballistic_vest_esapi",
+		"contents-group":"lmb_esapi_3"
+	}]
+          }]
+},
+{
+    "id": "lmb_ballistic_heavy_vest",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [{
+        "distribution": [{
+		"item":"ballistic_vest_heavy",
+		"contents-group":"lmb_esapi_5"
+	}]
+          }]
+},
+{
+    "id": "lmb_esapi_2",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {"item":"esapi_plate","prob":50},
+	{"item":"esbi_plate","prob":50}
+          ]
+},
+{
+    "id": "lmb_esapi_3",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {"item":"esapi_plate"},
+	{"item":"esbi_plate"}
+          ]
+},
+{
+    "id": "lmb_esapi_4",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {"item":"esapi_plate","count":[1,2]},
+	{"item":"esbi_plate","count":[1,2]}
+          ]
+},
+{
+    "id": "lmb_esapi_5",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {"item":"esapi_plate","count":2},
+	{"item":"esbi_plate","count":2}
+          ]
+}
+]

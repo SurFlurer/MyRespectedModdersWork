@@ -1,0 +1,24 @@
+[
+{
+    "id": "lmb_gun_p416_1",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+     {"item":"p416","contents-group":"sopmod","prob":20},
+	{"item":"p416","contents-item":"shoulder_strap","prob":80}
+          ]
+          }
+          ,{
+    "id": "lmb_gun_p416_2",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [{"item":"p416","contents-group":"sopmod"}]
+          },
+          {
+    "id": "lmb_gun_mgl",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [{"item":"mgl","contents-item":"shoulder_strap"}]
+          }
+          
+          ]

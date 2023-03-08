@@ -1,0 +1,30 @@
+[
+  {
+    "type": "mutation",
+    "id": "SHD_AGENT",
+    "name": {
+      "str": "强化性训练成果"
+    },
+    "points": 6,
+    "description": "你参与了国土战略局的强化性训练并得到了一些实验性的药物。你的最大耐力、耐力恢复和负重能力都得到的提升，同时你的属性也因为药物得到改变。",
+    "valid": false,
+    "purifiable": false,
+    "mixed_effect": true,
+    "types": [
+      "HEALING"
+    ],
+    "cardio_multiplier": 1.5,
+    "weight_capacity_modifier": 1.5,
+    "healing_awake": 0.1,
+    "healing_resting": 0.25,
+    "mending_modifier": 1,
+  "overmap_sight": 7,
+   "passive_mods": {
+      "str_mod": 2,
+      "dex_mod": 2,
+      "int_mod": 2,
+      "per_mod": 2
+    },
+    "fatigue_regen_modifier": 0.5
+    }
+  ]

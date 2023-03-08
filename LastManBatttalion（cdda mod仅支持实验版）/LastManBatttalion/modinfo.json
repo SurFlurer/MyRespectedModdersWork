@@ -1,0 +1,13 @@
+[
+{
+	"type":"MOD_INFO",
+	"id":"LMB",
+	"name":"幸存者军队",
+	"authors":["NF404HK416"],
+	"maintainers": ["NF404HK416"],
+	"description":"警告-此mod怪物强度较高，谨慎对付他们\n<color_light_green>感谢调试员咖啡大佬对此mod作者的帮助</color>\n一支准军事化部队-幸存者军队正在新英格兰地区游荡，他们正在遵从着冷酷无情的丛林法则和新达尔文主义以渡过此次灾难。灵感源自于游戏《全境封锁》\n请注意，此mod已趋于完整和稳定但仍在更新，如果你遇到有关本mod的弹错或是有什么对此mod建设的建议等可私信企鹅号1499273144\n另一个注意事项:已去掉了余波额外增加的购物中心生成",
+	"category":"content",
+	"version": "更新日期/updated 2022/8/26",
+	"dependencies":["dda","aftershock"]
+}
+]

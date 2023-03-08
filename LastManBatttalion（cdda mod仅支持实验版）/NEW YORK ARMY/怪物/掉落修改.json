@@ -1,0 +1,31 @@
+[
+{
+	"type": "item_group",
+	  "//":"rpk16/任务猎人",
+    "subtype": "collection",
+    "copy-from":"last_man_battletion_MISSION_agent_hunter",
+    "id": "last_man_battletion_MISSION_agent_hunter",
+    "extend":{
+	"entries":[
+	{
+	"item":"svd_rifle",
+	"prob":50
+	}
+	]
+	}
+	},
+	{
+	"type": "item_group",
+    "subtype": "collection",
+    "copy-from":"last_man_battletion_agent_hunter",
+    "id": "last_man_battletion_agent_hunter",
+    "extend":{
+	"entries":[
+	{
+	"item":"svd_rifle",
+	"prob":50
+	}
+	]
+	}
+	}
+	]

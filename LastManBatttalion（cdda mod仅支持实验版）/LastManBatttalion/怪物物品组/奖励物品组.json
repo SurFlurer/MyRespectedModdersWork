@@ -1,0 +1,30 @@
+[
+{
+	"type":"item_group",
+	"id":"lmb_bpx",
+	"subtype":"distribution",
+	"entries":[
+	{"item":"first_wave_TDI","prob":5},
+	{"item":"first_wave_m1a","prob":5},
+	{"item":"m1a_stage_left","prob":5},
+	{"item":"lone_star_pack","prob":1},
+	{"item":"socom_mk20","prob":1},
+	{"item":"akm_merciless","prob":2},
+	{"item_group": "ammo_can_ammo_pouch_223_part","prob":30},
+	{"item_group": "shd_clothes","prob":10},
+	{"item_group": "ammo_can_308_part","prob":20}
+	]
+},
+{
+	"type":"item_group",
+	"id":"shd_clothes",
+	"subtype":"collection",
+	"entries":[
+	{"item":"shd_pants","prob":80},
+	{"item":"shd_jacket","prob":80},
+	{"item":"shd_gloves","prob":80},
+	{"item":"shd_boots","prob":80},
+	{"item":"shd_mask","prob":80}
+	]
+}
+]

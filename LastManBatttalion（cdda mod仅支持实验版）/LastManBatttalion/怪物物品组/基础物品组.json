@@ -1,0 +1,94 @@
+[
+{
+	"type":"item_group",
+	"id":"lmb_food",
+	"subtype":"collection",
+	"items":[
+	{"group":"MRE","prob":50},
+	{"item":"chocolate","charges":[1,3]},
+	{
+	"item":"water_clean",
+	"container-item":"camelbak",
+	"charges":[1,4]
+	}
+	]
+},
+{
+	"type":"item_group",
+	"id":"lmb_full_food",
+	"subtype":"collection",
+	"items":[
+	{"group":"MRE","count":[2,3]},
+	{"item":"chocolate","charges":[2,5]},
+	{
+	"item":"water_clean",
+	"container-item":"camelbak",
+	"charges":[5,6]
+	}
+	]
+},
+{
+    "id": "lmb_hg",
+    "type": "item_group",
+    "//":"手枪",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "distribution": [
+          {"item":"holster","contents-group":"lmb_hg_group"}
+          ]
+          }
+          ]
+},
+{
+	"type":"item_group",
+	"//":"耳机",
+	"id":"lmb_hg_group",
+	"subtype":"distribution",
+	"items":[
+	{
+		"item":"m9",
+		"prob":50
+	},
+	{
+		"item":"m17",
+		"prob":40
+	},
+	{
+		"item":"p320_357sig",
+		"prob":10
+	}
+	]
+},
+{
+    "id": "lmb_knife",
+    "//":"刀",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "distribution": [
+          {
+		"contents-item":"knife_combat",
+		"item":"bootsheath"
+	}
+          ]
+          }
+          ]
+},
+{
+	"type":"item_group",
+	"id":"lmb_powered_group",
+	"subtype":"distribution",
+	"items":[
+	{
+		"item":"powered_earmuffs",
+		"prob":90
+	},
+	{
+		"item":"powered_earplugs",
+		"prob":10
+	}
+	]
+}
+]

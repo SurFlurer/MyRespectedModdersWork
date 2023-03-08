@@ -1,0 +1,75 @@
+[
+  {
+	"type": "faction",
+    "id": "JTF",
+    "name": "联合作战特遣队",
+    "likes_u": 0,
+    "respects_u": 0,
+    "known_by_u": false,
+    "size": 15,
+    "power": 20,
+    "food_supply": 1919810,
+    "wealth": 114514,
+    "relations": {
+      "free_merchants": {
+        "kill on sight": false,
+        "watch your back": false,
+        "share my stuff": false,
+        "guard your stuff": false,
+        "lets you in": true,
+        "defends your space": false,
+        "knows your voice": true
+      },
+      "old_guard": {
+        "kill on sight": false,
+        "watch your back": false,
+        "share my stuff": false,
+        "guard your stuff": false,
+        "lets you in": false,
+        "defends your space": false,
+        "knows your voice": false
+      },
+      "tacoma_commune": {
+        "kill on sight": false,
+        "watch your back": false,
+        "share my stuff": false,
+        "guard your stuff": false,
+        "lets you in": true,
+        "defends your space": false
+      },
+      "lobby_beggars": {
+        "kill on sight": false,
+        "watch your back": false,
+        "share my stuff": false,
+        "guard your stuff": true,
+        "lets you in": false,
+        "defends your space": false
+      },
+      "no_faction": {
+        "kill on sight": false,
+        "watch your back": false,
+        "share my stuff": false,
+        "guard your stuff": false,
+        "lets you in": false,
+        "defends your space": false,
+        "knows your voice": true
+      },
+      "wasteland_scavengers": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": false,
+        "guard your stuff": true,
+        "lets you in": false,
+        "defends your space": false,
+        "knows your voice": true
+      },
+	  "hells_raiders": {
+        "kill on sight": true
+      },
+      "marloss": {
+        "kill on sight": true
+      }
+    },
+    "description": "大灾变完全爆发前由多个应急部门和幸存部队组成的队伍，有不少的灾难前联邦政府存藏的物资和一些受过一定训练的前社会工作人员和幸存士兵。目前正与国土战略局合作。"
+  }
+  ]

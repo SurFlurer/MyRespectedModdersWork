@@ -1,0 +1,42 @@
+[{
+    "id": "bot_miniuav",
+    "type": "TOOL",
+    "name": {
+      "str": "迷你UAV（关）"
+    },
+    "description": "一台折叠着且未被激活的黯牙式小型UAV，使用556子弹和40mm榴弹作为弹药。激活将其部署，电子学和计算机学等级决定了你将其重新编程的成功几率。",
+    "weight": "40750 g",
+    "volume": "15 L",
+    "price": "6000 USD",
+    "price_postapoc": "600 USD",
+    "to_hit": -3,
+    "bashing": 8,
+    "material": [
+      "steel",
+      "plastic"
+    ],
+    "symbol": ";",
+    "color": "white",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_miniuav",
+      "difficulty": 1,
+      "moves": 150,
+      "skills": [
+        "electronics",
+        "computer"
+      ]
+    }
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_miniuav",
+    "symbol": ",",
+    "color": "green",
+    "name": {
+      "str": "小型UAV（损坏）"
+    },
+    "weight": "40 kg",
+    "copy-from": "broken_turret"
+  }
+  ]

@@ -1,0 +1,109 @@
+[{
+    "type": "item_group",
+    "id": "rouge_agent_worn",
+    "subtype": "collection",
+    "entries": [
+      {
+        "item": "helmet_army"
+      },
+      {
+        "item": "helmet_liner"
+      },
+      {
+        "item": "glasses_bal"
+      },
+      {
+        "item": "shd_mask"
+      },
+      {
+        "item": "shd_jacket"
+      },
+      {
+        "item": "shd_esapi"
+      },
+      {
+        "item": "shd_gloves"
+      },
+      {
+        "item": "panties"
+      },
+      {
+        "item": "under_armor_shorts"
+      },
+      {
+        "item": "stockings"
+      },
+      {
+        "item": "bra"
+      },
+      {
+        "item": "shd_boots"
+      },
+      {
+        "item": "lone_star_pack"
+      },
+      {
+        "item": "legrig"
+      },
+      {  
+        "item": "knife_rm42",
+        "container-item": "sheath"
+      }
+    ]
+  },
+  {
+    "id": "rouge_agent_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "magazine": 100,
+    "ammo": 100,
+    "entries": [
+      {
+         "item": "stanag30",
+         "ammo-item": "556_m855a1",
+         "count": 6
+      },
+      {
+         "item": "stanag50",
+         "ammo-item": "556_m855a1",
+         "count": 4
+      },
+      {
+        "item": "mre_veggy_box",
+        "count":4
+      },
+      {
+        "item": "militarymap"
+      },
+      {
+        "item": "survivormap"
+      },
+      {
+        "item": "protein_bar_evac",
+        "count":10
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "rouge_agent_weapon",
+    "subtype": "collection",
+    "magazine": 100,
+    "ammo": 100,
+    "entries": [
+      {
+            "item": "military_p416",
+            "ammo-item": "556_m855a1",
+            "contents-item": [
+              "shoulder_strap",
+              "grip",
+              "light_grip",
+              "waterproof_gunmod",
+              "rail_laser_sight",
+              "adjustable_stock",
+              "holo_sight"
+            ]
+      }
+    ]
+  }
+  ]

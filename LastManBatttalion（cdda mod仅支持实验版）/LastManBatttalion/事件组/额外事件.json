@@ -1,0 +1,62 @@
+[
+{
+    "id": "mx_lmb_patrol",
+    "type": "map_extra",
+    "name": {
+      "str": "巡逻小队"
+    },
+    "description": "一支LMB的巡逻小队在这。",
+    "generator": {
+      "generator_method": "update_mapgen",
+      "generator_id": "mx_lmb_patrol"
+    },
+    "sym": "R",
+    "color": "white",
+    "autonote": true
+  },
+ {
+    "id": "mx_lmb_scout",
+    "type": "map_extra",
+    "name": {
+      "str": "侦查小队"
+    },
+    "description": "一伙LMB的侦查小队在这。",
+    "generator": {
+      "generator_method": "update_mapgen",
+      "generator_id": "mx_lmb_scout"
+    },
+    "sym": "S",
+    "color": "white",
+    "autonote": true
+  },
+  {
+    "id": "mx_lmb_raiders",
+    "type": "map_extra",
+    "name": {
+      "str": "劫掠小队"
+    },
+    "description": "一名叛变特工正在带领一支队伍在此劫掠幸存者。",
+    "generator": {
+      "generator_method": "update_mapgen",
+      "generator_id": "mx_lmb_raiders"
+    },
+    "sym": "R",
+    "color": "white",
+    "autonote": true
+  },
+  {
+    "id": "mx_agent_hunter",
+    "type": "map_extra",
+    "name": {
+      "str": "不明信号"
+    },
+    "description": "这里正不断对外发出国土战略局特工的信号。",
+    "generator": {
+      "generator_method": "update_mapgen",
+      "generator_id": "mx_agent_hunter"
+    },
+    "sym": "R",
+    "color": "white",
+    "autonote": true
+  }
+]

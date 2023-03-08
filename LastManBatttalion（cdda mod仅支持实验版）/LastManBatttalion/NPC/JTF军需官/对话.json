@@ -1,0 +1,392 @@
+[
+     {
+    "id": "TALK_JTF_need",
+    "type": "talk_topic",
+    "dynamic_line": "你好，幸存者，我是负责这个仓库的军需官。我们可以出售一些子弹和其他东西给你，不过我们只收凤凰币 ",
+    "responses": [
+      {
+        "text": "兑换子弹",
+        "topic": "TALK_need_A"
+      },
+      {
+        "text":"[特殊交易品]交换一把精通TAC-50",
+        "topic": "TALK_need_tac",
+        "condition": {
+          "u_has_item": "404_weapon"
+        }
+        },
+      {
+        "text": "再见。",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_need_A",
+    "type": "talk_topic",
+    "dynamic_line": "你要换些什么?",
+    "responses": [
+     {
+        "text": "[50凤凰币]5.56×45M885A1弹 ×300",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "u_has_items": {
+              "item": "Phoenix",
+              "count": 50
+            }
+          }
+        },
+        "success": {
+          "topic": "TALK_need_ty",
+          "effect": [
+          {
+              "u_spawn_item":"556_m855a1",
+              "count": 300
+            },
+            {
+              "u_sell_item": "Phoenix",
+              "count": 50
+            },
+            {
+              "npc_consume_item": "Phoenix",
+              "count": 50
+            }
+        ]
+      },
+      "failure": {
+          "topic": "TALK_need_no"
+        }
+      },
+      {
+        "text": "[50凤凰币]7.62×51 M80 NATO弹 ×200",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "u_has_items": {
+              "item": "Phoenix",
+              "count": 50
+            }
+          }
+        },
+        "success": {
+          "topic": "TALK_need_ty",
+          "effect": [
+          {
+              "u_spawn_item": "762_51",
+              "count": 200
+            },
+            {
+              "u_sell_item": "Phoenix",
+              "count": 50
+            },
+            {
+              "npc_consume_item": "Phoenix",
+              "count": 50
+            }
+        ]
+      },
+      "failure": {
+          "topic": "TALK_need_no"
+        }
+      },
+      {
+        "text": "[40凤凰币]9×19金属披甲弹弹 ×500",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "u_has_items": {
+              "item": "Phoenix",
+              "count": 40
+            }
+          }
+        },
+        "success": {
+          "topic": "TALK_need_ty",
+          "effect": [
+          {
+              "u_spawn_item": "9mmfmj",
+              "count": 500
+            },
+            {
+              "u_sell_item": "Phoenix",
+              "count": 40
+            },
+            {
+              "npc_consume_item": "Phoenix",
+              "count": 40
+            }
+        ]
+      },
+      "failure": {
+          "topic": "TALK_need_no"
+        }
+      },
+      {
+        "text": "[40凤凰币].45金属披甲弹×400",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "u_has_items": {
+              "item": "Phoenix",
+              "count": 40
+            }
+          }
+        },
+        "success": {
+          "topic": "TALK_need_ty",
+          "effect": [
+          {
+              "u_spawn_item": "45_acp",
+              "count": 400
+            },
+            {
+              "u_sell_item": "Phoenix",
+              "count": 40
+            },
+            {
+              "npc_consume_item": "Phoenix",
+              "count": 40
+            }
+        ]
+      },
+      "failure": {
+          "topic": "TALK_need_no"
+        }
+      },
+      {
+        "text": "[50凤凰币]30.06春田弹 ×180",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "u_has_items": {
+              "item": "Phoenix",
+              "count": 50
+            }
+          }
+        },
+        "success": {
+          "topic": "TALK_need_ty",
+          "effect": [
+          {
+              "u_spawn_item": "556_m885a1",
+              "count": 180
+            },
+            {
+              "u_sell_item": "Phoenix",
+              "count": 50
+            },
+            {
+              "npc_consume_item": "Phoenix",
+              "count": 50
+            }
+        ]
+      },
+      "failure": {
+          "topic": "TALK_need_no"
+        }
+      },
+      {
+        "text": "[50凤凰币] .300BLK弹 ×250",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "u_has_items": {
+              "item": "Phoenix",
+              "count": 50
+            }
+          }
+        },
+        "success": {
+          "topic": "TALK_need_ty",
+          "effect": [
+          {
+              "u_spawn_item": "300blk",
+              "count": 250
+            },
+            {
+              "u_sell_item": "Phoenix",
+              "count": 50
+            },
+            {
+              "npc_consume_item": "Phoenix",
+              "count": 50
+            }
+        ]
+      },
+      "failure": {
+          "topic": "TALK_need_no"
+        }
+      },
+      {
+        "text": "[50凤凰币]12号猎鹿弹/独头弹 ×50",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "u_has_items": {
+              "item": "Phoenix",
+              "count": 50
+            }
+          }
+        },
+        "success": {
+          "topic": "TALK_need_ty",
+          "effect": [
+          {
+              "u_spawn_item": "shot_00",
+              "count": 50
+            },
+            {
+              "u_spawn_item": "shot_slug",
+              "count": 50
+            },
+            {
+              "u_sell_item": "Phoenix",
+              "count": 50
+            },
+            {
+              "npc_consume_item": "Phoenix",
+              "count": 50
+            }
+        ]
+      },
+      "failure": {
+          "topic": "TALK_need_no"
+        }
+      },
+         {
+        "text": "[50凤凰币] 12.7×99BMG弹 ×80",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "u_has_items": {
+              "item": "Phoenix",
+              "count": 50
+            }
+          }
+        },
+        "success": {
+          "topic": "TALK_need_ty",
+          "effect": [
+          {
+              "u_spawn_item": "50bmg",
+              "count": 80
+            },
+            {
+              "u_sell_item": "Phoenix",
+              "count": 50
+            },
+            {
+              "npc_consume_item": "Phoenix",
+              "count": 50
+            }
+        ]
+      },
+      "failure": {
+          "topic": "TALK_need_no"
+        }
+      },
+         {
+        "text": "[50凤凰币] .50MK211弹 ×10",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "u_has_items": {
+              "item": "Phoenix",
+              "count": 50
+            }
+          }
+        },
+        "success": {
+          "topic": "TALK_need_ty",
+          "effect": [
+          {
+              "u_spawn_item": "50_mk211",
+              "count": 10
+            },
+            {
+              "u_sell_item": "Phoenix",
+              "count": 50
+            },
+            {
+              "npc_consume_item": "Phoenix",
+              "count": 50
+            }
+        ]
+      },
+      "failure": {
+          "topic": "TALK_need_no"
+        }
+      },
+      {
+        "text": "我想看看其他东西。",
+        "topic": "TALK_JTF_need"
+      }
+    ]
+  },
+  {
+    "id": "TALK_need_tac",
+    "type": "talk_topic",
+    "dynamic_line": "我们有一把精过特殊调整的tac-50，你确定需要吗?。",
+    "responses": [
+      {
+        "text": "[300凤凰币]精通TAC-50。",
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "u_has_items": {
+              "item": "404_weapon",
+              "count": 1
+            }
+          }
+        },
+        "success": {
+        "topic": "TALK_need_ty",
+        "effect": [
+            {
+              "u_spawn_item":"tac50hs",
+              "count": 1
+            },
+            {
+              "u_sell_item": "Phoenix",
+              "count": 300
+            },
+            {
+              "npc_consume_item": "Phoenix",
+              "count": 300
+            }
+            ]
+        },
+        "failure": {
+          "topic": "TALK_need_no"
+        }
+      },
+      {
+        "text": "让我想想....。",
+        "topic": "TALK_JTF_need"
+      }
+    ]
+  },
+  {
+    "id": "TALK_need_ty",
+    "type": "talk_topic",
+    "dynamic_line": "希望这些东西能帮到你。",
+    "responses": [
+      {
+        "text": "当然了。",
+        "topic": "TALK_JTF_need"
+      }
+    ]
+  },
+  {
+    "id": "TALK_need_no",
+    "type": "talk_topic",
+    "dynamic_line": "东西不够，幸存者。",
+    "responses": [
+      {
+        "text": "好吧。",
+        "topic": "TALK_JTF_need"
+      }
+    ]
+  }
+  ]

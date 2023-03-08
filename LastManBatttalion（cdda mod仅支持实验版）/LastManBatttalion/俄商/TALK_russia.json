@@ -1,0 +1,48 @@
+[
+  {
+    "id": "TALK_merchant_russia",
+    "type": "talk_topic",
+    "dynamic_line": "嘿，幸存者，要来些俄制的武器和子弹吗?",
+    "responses": [
+      {
+        "text": "你是什么人?",
+        "topic": "TALK_russia_A"
+      },
+      {
+        "text": "看看你有什么东西。",
+        "effect": "start_trade",
+        "topic": "TALK_merchant_russia"
+      },
+      {
+        "text": "再见。",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_russia_A",
+    "type": "talk_topic",
+    "dynamic_line": "如你所见，我只是一个来自自由商会的商人。",
+    "responses": [
+      {
+        "text": "这里可是美国，你哪来这么多俄国人的东西?",
+        "topic": "TALK_russia_A_1"
+      },
+      {
+        "text": "我知道了。",
+        "topic": "TALK_mechanic_russia"
+      }
+    ]
+  },
+  {
+    "id": "TALK_russia_A_1",
+    "type": "talk_topic",
+    "dynamic_line": "我在大灾变之前是北美军火公司的进口武器检查员，大灾变发生时我正一个人在一处存放俄国进口品的仓库里检查进口商品。后来我带着那个仓库的东西加入了自由商会，他们便让我出来把这些东西卖出去。就这样。",
+    "responses": [
+      {
+        "text": "有意思的故事。",
+        "topic": "TALK_merchant_russia"
+      }
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+[
+    {
+      "id": "sv98mag",
+      "type": "MAGAZINE",
+      "name": {
+        "str": "SV98专用弹匣"
+      },
+      "description": "SV98的专用弹匣，能装下10发7.62×54mm的子弹",
+      "weight": "400 g",
+      "volume": "800 ml",
+      "price": "15 USD",
+      "bashing": 4,
+      "to_hit": -2,
+      "material": [
+        "plastic"
+      ],
+      "symbol": "#",
+      "color": "green",
+      "ammo_type": [
+        "762R"
+      ],
+      "capacity": 7,
+      "pocket_data": [
+        {
+          "pocket_type": "MAGAZINE",
+          "rigid": true,
+          "ammo_restriction": {
+            "762R": 10
+          }
+        }
+      ],
+      "reload_time": 140,
+      "flags": [
+        "MAG_BULKY"
+      ]
+    },
+    {
+      "id": "srsmag",
+      "type": "MAGAZINE",
+      "name": {
+        "str": "SRSA3专用弹匣"
+      },
+      "description": "SRSA3的专用弹匣，能装下10发7.62×51mm的子弹",
+      "weight": "400 g",
+      "volume": "800 ml",
+      "price": "15 USD",
+      "bashing": 4,
+      "to_hit": -2,
+      "material": [
+        "plastic"
+      ],
+      "symbol": "#",
+      "color": "green",
+      "ammo_type": [
+        "308"
+      ],
+      "capacity": 7,
+      "pocket_data": [
+        {
+          "pocket_type": "MAGAZINE",
+          "rigid": true,
+          "ammo_restriction": {
+            "308": 10
+          }
+        }
+      ],
+      "reload_time": 140,
+      "flags": [
+        "MAG_BULKY"
+      ]
+    }
+]

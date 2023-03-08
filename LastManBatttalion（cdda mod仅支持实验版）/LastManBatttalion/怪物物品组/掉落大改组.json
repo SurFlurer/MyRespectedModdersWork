@@ -1,0 +1,82 @@
+[
+{
+"//":"基础衣物掉落",
+     "type":"item_group",
+	"id":"lmb_soldier_clothing",
+	"subtype":"collection",
+	"items":[
+	{"group":"clothing_military"},
+	{"item":"elbow_pads"},
+	{"item":"knee_pads"},
+	{"group":"lmb_hg"},
+	{"group":"lmb_knife"},
+	{"group":"lmb_powered_group"}
+	]
+},
+{
+    "id": "lmb_scav_group",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+    {"group":"lmb_scav"},
+	{"group":"lmb_signalcorps"}
+          ]
+},
+{
+"//":"巡逻步兵掉落组",
+     "type":"item_group",
+	"id":"lmb_scav",
+	"subtype":"collection",
+	"items":[
+	{"group":"lmb_soldier_clothing"},
+	{"group":"lmb_helmet"},
+	{"group":"lmb_rifle_vest"},
+	{"group":"lmb_ballistic_vest_3"},
+	{"group":"lmb_scav_pack","prob":10},
+	{"item":"chocolate","charges":[1,3]},
+	{"group":"lmb_gun_p416_1"}
+	]
+},
+{
+"//":"巡逻步兵通信兵掉落组",
+     "type":"item_group",
+	"id":"lmb_signalcorps",
+	"subtype":"collection",
+	"items":[
+	{"group":"lmb_soldier_clothing"},
+	{"group":"lmb_helmet"},
+	{"group":"lmb_rifle_vest"},
+	{"group":"lmb_ballistic_vest_3"},
+	{"group":"lmb_scav_pack","prob":50},
+	{"item":"chocolate","charges":[1,3]},
+	{"group":"lmb_gun_p416_1"}
+	]
+},
+{
+"//":"步枪手掉落组",
+     "type":"item_group",
+	"id":"lmb_rifleman_group",
+	"subtype":"collection",
+	"items":[
+	{"group":"lmb_soldier_clothing"},
+	{"group":"lmb_helmet"},
+	{"item":"goggles_nv","charges":[0,100],"prob":5},
+	{"group":"lmb_rifle_vest"},
+	{"group":"lmb_ballistic_vest_3"},
+	{"group":"lmb_scav_pack","prob":50},
+	{"group":"lmb_gun_p416_2"}
+	]
+},
+{
+"//":"投掷者掉落组",
+     "type":"item_group",
+	"id":"lmb_grenadier_group",
+	"subtype":"collection",
+	"items":[
+	{"group":"lmb_soldier_clothing"},
+	{"group":"lmb_helmet"},
+	{"group":"lmb_ballistic_heavy_vest"},
+	{"group":"lmb_gun_mgl"}
+	]
+}
+]
