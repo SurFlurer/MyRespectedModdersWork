@@ -41,13 +41,13 @@
         "distribution": [
           {
             "item": "ballistic_vest_heavy",
-            "variant": "us_ballistic_vest",
+            "variant": "ballistic_vest_heavy_military",
             "contents-group": "used_kitted_medium_vest",
             "prob": 100
           },
           {
             "collection": [
-              { "item": "ballistic_vest_heavy", "variant": "us_ballistic_vest", "contents-group": "some_esapi_plates" },
+              { "item": "ballistic_vest_heavy", "variant": "ballistic_vest_heavy_military", "contents-group": "some_esapi_plates" },
               { "group": "loaded_lbv" }
             ],
             "prob": 50
