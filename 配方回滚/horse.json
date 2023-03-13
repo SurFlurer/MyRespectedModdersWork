@@ -1,34 +1,66 @@
-  {
-    "id": "mon_horse",
-    "type": "MONSTER",
-    "name": { "str": "horse" },
-    "description": "A hooved grazing mammal with a mane of hair, a sweeping tail, and powerful-looking muscles.  A stalwart companion to humans for longer than recorded history, with some effort you should be able to get this one to trust you enough to ride it.",
-    "default_faction": "herbivore",
-    "bodytype": "horse",
-    "categories": [ "WILDLIFE" ],
-    "species": [ "MAMMAL" ],
-    "volume": "550000 ml",
-    "weight": "550 kg",
-    "hp": 90,
-    "speed": 300,
-    "attack_cost": 230,
-    "material": [ "flesh" ],
-    "symbol": "H",
-    "color": "brown",
-    "morale": 100,
-    "melee_skill": 6,
-    "melee_dice": 2,
-    "melee_dice_sides": 12,
-    "armor_elec": 1,
-    "dodge": 2,
-    "armor_bash": 2,
-    "anger_triggers": [ "FRIEND_ATTACKED" ],
-    "fear_triggers": [ "SOUND", "PLAYER_CLOSE" ],
-    "placate_triggers": [ "PLAYER_WEAK" ],
-    "harvest": "mammal_large_leather",
-    "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 2 },
-    "special_attacks": [ [ "EAT_CROP", 60 ] ],
-    "zombify_into": "mon_zombie_horse",
-    "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you!  It lets you pat its head and seems friendly." },
-    "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "PET_WONT_FOLLOW", "PET_MOUNTABLE", "PATH_AVOID_DANGER_1", "WARM" ]
-  }
+{
+  "id": "mon_horse",
+  "type": "MONSTER",
+  "name": {
+    "str": "horse"
+  },
+  "description": "A hooved grazing mammal with a mane of hair, a sweeping tail, and powerful-looking muscles.  A stalwart companion to humans for longer than recorded history, with some effort you should be able to get this one to trust you enough to ride it.",
+  "default_faction": "herbivore",
+  "bodytype": "horse",
+  "categories": [
+    "WILDLIFE"
+  ],
+  "species": [
+    "MAMMAL"
+  ],
+  "volume": "550000 ml",
+  "weight": "550 kg",
+  "hp": 90,
+  "speed": 300,
+  "attack_cost": 230,
+  "material": [
+    "flesh"
+  ],
+  "symbol": "H",
+  "color": "brown",
+  "morale": 100,
+  "melee_skill": 6,
+  "melee_dice": 2,
+  "melee_dice_sides": 12,
+  "armor_elec": 1,
+  "dodge": 2,
+  "armor_bash": 2,
+  "anger_triggers": [
+    "FRIEND_ATTACKED"
+  ],
+  "fear_triggers": [
+    "SOUND",
+    "PLAYER_CLOSE"
+  ],
+  "placate_triggers": [
+    "PLAYER_WEAK"
+  ],
+  "harvest": "mammal_large_leather",
+  "biosignature": {
+    "biosig_item": "feces_manure",
+    "biosig_timer": 2
+  },
+  "special_attacks": [
+    [ "EAT_CROP", 60 ]
+  ],
+  "zombify_into": "mon_zombie_horse",
+  "petfood": {
+    "food": [ "CATTLEFOOD" ],
+    "feed": "The %s seems to like you!  It lets you pat its head and seems friendly."
+  },
+  "flags": [
+    "SEES",
+    "HEARS",
+    "SMELLS",
+    "ANIMAL",
+    "PET_WONT_FOLLOW",
+    "PET_MOUNTABLE",
+    "PATH_AVOID_DANGER_1",
+    "WARM"
+  ]
+}
